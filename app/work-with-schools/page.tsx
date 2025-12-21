@@ -27,14 +27,14 @@ const offerings = [
     description:
       'Sometimes direct engagement has the most impact. Rashan Thompson leads interactive workshops that introduce students to AI literacy, career exploration, entrepreneurship, and financial fundamentals.',
     details:
-      'Workshops are tailored to grade level and can be delivered as single sessions, multi-day programs, or recurring engagements. Students engage with someone who has walked the path they're just beginning.',
+      "Workshops are tailored to grade level and can be delivered as single sessions, multi-day programs, or recurring engagements. Students engage with someone who has walked the path they're just beginning.",
   },
   {
     title: 'Parent Engagement',
     description:
       "Students don't learn in isolation. Rashan Thompson offers parent workshops and presentations that help families understand the changing landscape and support their children's preparation.",
     details:
-      'When parents understand what's coming, they become partners in preparation rather than obstacles to progress. Family financial literacy sessions extend the learning beyond the school day.',
+      "When parents understand what's coming, they become partners in preparation rather than obstacles to progress. Family financial literacy sessions extend the learning beyond the school day.",
   },
 ];
 
