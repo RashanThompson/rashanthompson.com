@@ -15,9 +15,18 @@ export const siteConfig = {
 
 export const navItems: NavItem[] = [
   { title: 'About', href: '/about' },
+  { title: 'What I Do', href: '/what-i-do' },
   { title: 'For Business', href: '/for-business' },
   { title: 'Case Studies', href: '/case-studies' },
-  { title: 'Speaking', href: '/speaking' },
+  {
+    title: 'Speaking',
+    href: '/speaking',
+    children: [
+      { title: 'Work with Students', href: '/work-with-students' },
+      { title: 'Work with Schools', href: '/work-with-schools' },
+      { title: 'Work with Faith', href: '/work-with-faith' },
+    ],
+  },
   { title: 'Work With Rashan', href: '/contact', isButton: true },
 ];
 

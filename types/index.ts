@@ -2,6 +2,7 @@ export interface NavItem {
   title: string;
   href: string;
   isButton?: boolean;
+  children?: NavItem[];
 }
 
 export interface Metric {
