@@ -15,9 +15,10 @@ export const siteConfig = {
 
 export const navItems: NavItem[] = [
   { title: 'About', href: '/about' },
-  { title: 'What I Do', href: '/what-i-do' },
+  { title: 'For Business', href: '/for-business' },
+  { title: 'Case Studies', href: '/case-studies' },
   { title: 'Speaking', href: '/speaking' },
-  { title: 'Invite Rashan', href: '/contact', isButton: true },
+  { title: 'Work With Rashan', href: '/contact', isButton: true },
 ];
 
 export const heroMetrics: Metric[] = [
@@ -30,39 +31,43 @@ export const workWithCards = [
   {
     title: 'For Businesses',
     description: 'CRM implementation, AI strategy, contact center transformation, and revenue operations for SMBs and startups.',
-    href: '/what-i-do',
-    image: '/images/stock/business-strategy.jpg',
+    href: '/for-business',
+    image: '/images/stock/business-strategy.svg',
     imageAlt: 'Business professionals discussing AI strategy and digital transformation',
   },
   {
     title: 'For Students',
     description: 'AI literacy, career exploration, youth entrepreneurship, and financial education for K-12 students.',
     href: '/work-with-students',
-    image: '/images/stock/student-learning.jpg',
+    image: '/images/stock/student-learning.svg',
     imageAlt: 'Students engaged in technology and career exploration workshop',
   },
   {
     title: 'For Schools',
     description: 'Workshops, teacher training, and curriculum consulting to prepare institutions for the AI era.',
     href: '/work-with-schools',
-    image: '/images/stock/classroom-technology.jpg',
+    image: '/images/stock/classroom-technology.svg',
     imageAlt: 'Modern classroom with technology integration and engaged students',
   },
   {
     title: 'For Faith Communities',
     description: 'Career workshops and financial wellness programs aligned with faith-based principles.',
     href: '/work-with-faith',
-    image: '/images/stock/church-community.jpg',
+    image: '/images/stock/church-community.svg',
     imageAlt: 'Faith community gathering for career and financial wellness workshop',
   },
 ];
 
 export const footerLinks = {
+  services: [
+    { title: 'For Business', href: '/for-business' },
+    { title: 'Case Studies', href: '/case-studies' },
+    { title: 'Speaking', href: '/speaking' },
+  ],
   workWith: [
     { title: 'Students', href: '/work-with-students' },
     { title: 'Schools', href: '/work-with-schools' },
     { title: 'Faith Communities', href: '/work-with-faith' },
-    { title: 'Speaking', href: '/speaking' },
   ],
   learnMore: [
     { title: 'About Rashan', href: '/about' },

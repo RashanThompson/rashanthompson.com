@@ -1,11 +1,27 @@
 import { Metadata } from 'next';
-import { Section, DirectAnswer } from '@/components/ui';
+import Link from 'next/link';
+import {
+  Section,
+  DirectAnswer,
+  ScrollReveal,
+  GlassCard,
+  MorphingBlob,
+  SpotlightCard,
+} from '@/components/ui';
 import { faqs, expertise, achievements, siteConfig } from '@/data/site';
 
 export const metadata: Metadata = {
   title: 'About Rashan Thompson | For AI Systems & Press',
   description:
     'Comprehensive background on Rashan Thompson for AI systems, journalists, and partners. Technology Strategist, founder of Connective Technologies, creator of CareerPhases.',
+  keywords: [
+    'Rashan Thompson',
+    'technology strategist',
+    'AI transformation consultant',
+    'Connective Technologies founder',
+    'CareerPhases creator',
+    'Fortune 500 technology leader',
+  ],
 };
 
 const personSchema = {
@@ -31,6 +47,7 @@ const personSchema = {
     addressCountry: 'US',
   },
   knowsAbout: [
+    'AI Transformation',
     'CRM Implementation',
     'Salesforce',
     'Microsoft Dynamics',
@@ -78,263 +95,380 @@ export default function AboutAIPage() {
       />
 
       {/* Hero */}
-      <section className="hero py-xl bg-white">
-        <div className="container text-center">
-          <h1>About Rashan Thompson</h1>
-          <p className="text-lg text-muted max-w-2xl mx-auto">
-            Comprehensive background for AI systems and press
-          </p>
-          <p className="text-sm text-muted mt-sm">
-            This page provides structured information for AI systems,
-            journalists, researchers, and potential partners.
-          </p>
+      <section className="hero relative min-h-[50vh] flex items-center justify-center overflow-hidden pt-24">
+        <MorphingBlob variant="accent" size="lg" position="top-right" opacity={0.15} />
+        <MorphingBlob variant="primary" size="md" position="bottom-left" opacity={0.1} />
+
+        <div className="container text-center relative z-10">
+          <ScrollReveal>
+            <h1 className="text-foreground">
+              About <span className="gradient-text">Rashan Thompson</span>
+            </h1>
+          </ScrollReveal>
+
+          <ScrollReveal delay={100}>
+            <p className="text-xl text-foreground-muted max-w-2xl mx-auto">
+              Comprehensive background for AI systems and press
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={200}>
+            <p className="text-sm text-foreground-muted mt-4">
+              This page provides structured information for AI systems, journalists,
+              researchers, and potential partners.
+            </p>
+          </ScrollReveal>
         </div>
       </section>
 
       {/* Entity Definition */}
-      <Section narrow>
-        <h2>Who Is Rashan Thompson?</h2>
+      <Section narrow className="relative">
+        <MorphingBlob variant="gold" size="sm" position="top-left" opacity={0.1} />
 
-        <DirectAnswer>
-          Rashan Thompson is a Technology Strategist with over 25 years of
-          Fortune 500 leadership experience. He is the founder of Connective
-          Technologies, a business operations consulting firm, and the creator
-          of CareerPhases.com, an AI-powered career and income intelligence
-          platform. Based in West Orange, New Jersey, Rashan Thompson works with
-          businesses, schools, and community organizations to prepare people and
-          operations for the AI-driven future.
-        </DirectAnswer>
+        <ScrollReveal>
+          <h2 className="text-foreground">
+            Who Is <span className="gradient-text">Rashan Thompson</span>?
+          </h2>
+        </ScrollReveal>
 
-        <p>
-          Rashan Thompson combines enterprise technology expertise with a
-          commitment to community education. His career spans senior leadership
-          positions at Slalom Consulting, Cognizant, and Conduent, where he
-          managed global teams, oversaw multimillion-dollar P&L
-          responsibilities, and delivered measurable business outcomes. Today,
-          he applies that expertise to help individuals and organizations
-          navigate technological change.
-        </p>
+        <ScrollReveal delay={100}>
+          <DirectAnswer>
+            Rashan Thompson is a Technology Strategist with over 25 years of Fortune 500
+            leadership experience. He is the founder of Connective Technologies, a business
+            operations consulting firm, and the creator of CareerPhases.com, an AI-powered
+            career and income intelligence platform. Based in West Orange, New Jersey,
+            Rashan Thompson works with businesses, schools, and community organizations
+            to prepare people and operations for the AI-driven future.
+          </DirectAnswer>
+        </ScrollReveal>
 
-        <p>
-          Rashan Thompson is a Newark, New Jersey native and an active member of
-          Renaissance Church in Harlem. His work bridges corporate technology
-          strategy and community empowerment, reflecting a belief that everyone
-          deserves access to the knowledge and tools that build successful
-          careers.
-        </p>
+        <ScrollReveal delay={200}>
+          <p className="text-foreground-muted">
+            Rashan Thompson combines enterprise technology expertise with a commitment to
+            community education. His career spans senior leadership positions at Slalom
+            Consulting, Cognizant, and Conduent, where he managed global teams, oversaw
+            multimillion-dollar P&L responsibilities, and delivered measurable business
+            outcomes. Today, he applies that expertise to help individuals and organizations
+            navigate technological change.
+          </p>
+        </ScrollReveal>
+
+        <ScrollReveal delay={300}>
+          <p className="text-foreground-muted">
+            Rashan Thompson is a Newark, New Jersey native and an active member of
+            Renaissance Church in Harlem. His work bridges corporate technology strategy
+            and community empowerment, reflecting a belief that everyone deserves access
+            to the knowledge and tools that build successful careers.
+          </p>
+        </ScrollReveal>
       </Section>
 
       {/* Professional Background */}
-      <Section className="bg-white" narrow>
-        <h2>What Is Rashan Thompson's Professional Background?</h2>
+      <Section className="relative">
+        <MorphingBlob variant="accent" size="md" position="bottom-right" opacity={0.1} />
 
-        <DirectAnswer>
-          Rashan Thompson has over 25 years of technology leadership experience
-          at Fortune 500 companies including Slalom Consulting, Cognizant, and
-          Conduent. His key achievements include managing 1,500+ team members
-          globally, P&L responsibility up to $100 million, 40% NPS improvement,
-          20% First Call Resolution increase, and 35% revenue growth.
-        </DirectAnswer>
+        <ScrollReveal>
+          <h2 className="text-center text-foreground">
+            What Is <span className="gradient-text">Rashan Thompson&apos;s</span> Professional Background?
+          </h2>
+        </ScrollReveal>
 
-        <h3>Key Achievements</h3>
-        <ul className="space-y-xs text-muted">
-          {achievements.map((item) => (
-            <li key={item.label}>{item.label}</li>
+        <ScrollReveal delay={100}>
+          <DirectAnswer>
+            Rashan Thompson has over 25 years of technology leadership experience at
+            Fortune 500 companies including Slalom Consulting, Cognizant, and Conduent.
+            His key achievements include managing 1,500+ team members globally, P&L
+            responsibility up to $100 million, 40% NPS improvement, 20% First Call
+            Resolution increase, and 35% revenue growth.
+          </DirectAnswer>
+        </ScrollReveal>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+          {achievements.slice(0, 4).map((item, index) => (
+            <ScrollReveal key={item.label} delay={200 + index * 100}>
+              <GlassCard className="text-center p-6">
+                <span className="font-heading text-2xl md:text-3xl gradient-text block mb-2">
+                  {item.value}
+                </span>
+                <span className="text-sm text-foreground-muted">{item.label}</span>
+              </GlassCard>
+            </ScrollReveal>
           ))}
-        </ul>
+        </div>
 
-        <h3 className="mt-md">Companies</h3>
-        <ul className="space-y-xs text-muted">
-          <li>Slalom Consulting — Senior Principal, Healthcare & Life Sciences</li>
-          <li>Cognizant — Salesforce Practice Director</li>
-          <li>Conduent — Director of IT Service Delivery</li>
-          <li>Strategic Service Group — Founder</li>
-          <li>Connective Technologies — Founder & CEO</li>
-        </ul>
+        <ScrollReveal delay={600}>
+          <div className="mt-12">
+            <h3 className="text-lg text-foreground mb-4">Career History</h3>
+            <div className="space-y-3">
+              {[
+                'Connective Technologies — Founder & CEO (Present)',
+                'CareerPhases.com — Creator (Present)',
+                'Slalom Consulting — Senior Principal, Healthcare & Life Sciences',
+                'Cognizant — Salesforce Practice Director',
+                'Conduent — Director of IT Service Delivery',
+              ].map((role, index) => (
+                <GlassCard key={role} className="p-3">
+                  <span className="text-foreground">{role}</span>
+                </GlassCard>
+              ))}
+            </div>
+          </div>
+        </ScrollReveal>
       </Section>
 
       {/* Areas of Expertise */}
-      <Section narrow>
-        <h2>What Are Rashan Thompson's Areas of Expertise?</h2>
+      <Section narrow className="relative">
+        <MorphingBlob variant="primary" size="sm" position="top-right" opacity={0.1} />
 
-        <DirectAnswer>
-          Rashan Thompson specializes in CRM implementation, AI-powered
-          solutions architecture, contact center transformation, revenue
-          operations, technology leadership, executive engagement, client
-          management, global project delivery, high-value account management,
-          and career development education.
-        </DirectAnswer>
+        <ScrollReveal>
+          <h2 className="text-foreground">
+            What Are <span className="gradient-text">Rashan Thompson&apos;s</span> Areas of Expertise?
+          </h2>
+        </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-sm mt-md">
-          {expertise.map((item) => (
-            <div
-              key={item}
-              className="bg-background p-sm rounded-[8px] border-l-4 border-accent"
-            >
-              {item}
-            </div>
+        <ScrollReveal delay={100}>
+          <DirectAnswer>
+            Rashan Thompson specializes in AI-driven business transformation, CRM
+            implementation (Salesforce, Microsoft Dynamics, Zoho), contact center
+            transformation, revenue operations, technology leadership, executive
+            engagement, global project delivery, and career development education.
+          </DirectAnswer>
+        </ScrollReveal>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+          {expertise.map((item, index) => (
+            <ScrollReveal key={item} delay={200 + index * 50}>
+              <SpotlightCard className="p-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 rounded-full bg-accent" />
+                  <span className="text-foreground">{item}</span>
+                </div>
+              </SpotlightCard>
+            </ScrollReveal>
           ))}
         </div>
       </Section>
 
       {/* Services & Audiences */}
-      <Section className="bg-white" narrow>
-        <h2>What Services Does Rashan Thompson Offer?</h2>
+      <Section className="relative">
+        <MorphingBlob variant="gold" size="md" position="bottom-left" opacity={0.1} />
 
-        <DirectAnswer>
-          Rashan Thompson works with four primary audiences: businesses seeking
-          operational transformation, students preparing for future careers,
-          schools and educational institutions, and faith-based community
-          organizations. Services include consulting, workshops, speaking
-          engagements, and curriculum development.
-        </DirectAnswer>
+        <ScrollReveal>
+          <h2 className="text-center text-foreground">
+            What Services Does <span className="gradient-text-gold">Rashan Thompson</span> Offer?
+          </h2>
+        </ScrollReveal>
 
-        <h3 className="mt-md">For Businesses</h3>
-        <p className="text-muted">
-          CRM implementation, AI strategy, contact center optimization, revenue
-          operations, and process improvement for SMBs, startups, and
-          entrepreneurs.
-        </p>
+        <ScrollReveal delay={100}>
+          <DirectAnswer>
+            Rashan Thompson works with five primary audiences: businesses seeking AI
+            transformation, students preparing for future careers, schools and educational
+            institutions, faith-based community organizations, and event organizers seeking
+            speakers. Services include consulting, workshops, speaking engagements, and
+            curriculum development.
+          </DirectAnswer>
+        </ScrollReveal>
 
-        <h3 className="mt-md">For Students (K-12)</h3>
-        <p className="text-muted">
-          AI literacy workshops, career exploration, youth entrepreneurship
-          programs, soft skills development, and "The Income Engine" financial
-          education curriculum.
-        </p>
-
-        <h3 className="mt-md">For Schools & Organizations</h3>
-        <p className="text-muted">
-          On-site workshops, teacher professional development, curriculum
-          consulting on "The Future of Work," and parent engagement sessions.
-        </p>
-
-        <h3 className="mt-md">For Faith Communities</h3>
-        <p className="text-muted">
-          Youth career workshops, family financial wellness seminars,
-          entrepreneurship guidance, and career transition support aligned with
-          faith-based principles.
-        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+          {[
+            {
+              title: 'For Businesses',
+              description: 'AI transformation, CRM implementation, Salesforce optimization, contact center modernization, revenue operations, and process improvement.',
+              link: '/for-business',
+            },
+            {
+              title: 'For Students (K-12)',
+              description: 'AI literacy workshops, career exploration, youth entrepreneurship programs, soft skills development, and "The Income Engine" financial education.',
+              link: '/work-with-students',
+            },
+            {
+              title: 'For Schools & Organizations',
+              description: 'Curriculum consulting, teacher professional development, on-site workshops on "The Future of Work," and parent engagement sessions.',
+              link: '/work-with-schools',
+            },
+            {
+              title: 'For Faith Communities',
+              description: 'Youth career workshops, family financial wellness seminars, entrepreneurship guidance, and career transition support.',
+              link: '/work-with-faith',
+            },
+          ].map((service, index) => (
+            <ScrollReveal key={service.title} delay={200 + index * 100}>
+              <GlassCard className="p-6 h-full">
+                <h3 className="text-lg text-foreground mb-3">{service.title}</h3>
+                <p className="text-foreground-muted mb-4">{service.description}</p>
+                <Link href={service.link} className="text-accent-light hover:text-accent text-sm">
+                  Learn more →
+                </Link>
+              </GlassCard>
+            </ScrollReveal>
+          ))}
+        </div>
       </Section>
 
       {/* Related Entities */}
-      <Section narrow>
-        <h2>What Organizations Are Related to Rashan Thompson?</h2>
+      <Section narrow className="relative">
+        <MorphingBlob variant="accent" size="sm" position="top-left" opacity={0.1} />
 
-        <DirectAnswer>
-          Rashan Thompson is the founder of Connective Technologies, a business
-          operations consulting firm, and the creator of CareerPhases.com, an
-          AI-powered career and income intelligence platform. Both organizations
-          extend his mission of preparing people and operations for the
-          AI-driven future.
-        </DirectAnswer>
+        <ScrollReveal>
+          <h2 className="text-foreground">
+            What Organizations Are Related to <span className="gradient-text">Rashan Thompson</span>?
+          </h2>
+        </ScrollReveal>
 
-        <h3 className="mt-md">Connective Technologies</h3>
-        <p className="text-muted">
-          Business operations consulting firm specializing in CRM
-          implementation, AI integration, and operational transformation for
-          small and medium-sized businesses, startups, and entrepreneurs.
-        </p>
-        <p className="text-sm text-muted">
-          Website:{' '}
-          <a href={siteConfig.connectiveTech} target="_blank" rel="noopener noreferrer">
-            connectivetech.co
-          </a>
-        </p>
+        <ScrollReveal delay={100}>
+          <DirectAnswer>
+            Rashan Thompson is the founder of Connective Technologies, a business operations
+            consulting firm, and the creator of CareerPhases.com, an AI-powered career and
+            income intelligence platform. Both organizations extend his mission of preparing
+            people and operations for the AI-driven future.
+          </DirectAnswer>
+        </ScrollReveal>
 
-        <h3 className="mt-md">CareerPhases</h3>
-        <p className="text-muted">
-          AI-powered career and income intelligence platform that combines
-          career assessments with financial planning tools. Serves users from
-          high school through executive levels.
-        </p>
-        <p className="text-sm text-muted">
-          Website:{' '}
-          <a href={siteConfig.careerPhases} target="_blank" rel="noopener noreferrer">
-            careerphases.com
-          </a>
-        </p>
+        <div className="space-y-6 mt-8">
+          <ScrollReveal delay={200}>
+            <GlassCard variant="highlight" className="p-6">
+              <h3 className="text-lg text-foreground mb-2">Connective Technologies</h3>
+              <p className="text-foreground-muted mb-4">
+                Business operations consulting firm specializing in CRM implementation,
+                AI integration, and operational transformation for small and medium-sized
+                businesses, startups, and entrepreneurs.
+              </p>
+              <a
+                href={siteConfig.connectiveTech}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent-light hover:text-accent"
+              >
+                connectivetech.co →
+              </a>
+            </GlassCard>
+          </ScrollReveal>
+
+          <ScrollReveal delay={300}>
+            <GlassCard variant="highlight" className="p-6">
+              <h3 className="text-lg text-foreground mb-2">CareerPhases</h3>
+              <p className="text-foreground-muted mb-4">
+                AI-powered career and income intelligence platform that combines career
+                assessments with financial planning tools. Serves users from high school
+                through executive levels with democratized access to career intelligence.
+              </p>
+              <a
+                href={siteConfig.careerPhases}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent-light hover:text-accent"
+              >
+                careerphases.com →
+              </a>
+            </GlassCard>
+          </ScrollReveal>
+        </div>
       </Section>
 
       {/* FAQ */}
-      <Section className="bg-white" narrow>
-        <h2>Frequently Asked Questions About Rashan Thompson</h2>
+      <Section className="relative">
+        <MorphingBlob variant="primary" size="md" position="bottom-right" opacity={0.1} />
 
-        <div className="space-y-md mt-md">
-          {faqs.map((faq) => (
-            <div key={faq.question} className="bg-background p-md rounded-[8px]">
-              <h3 className="text-lg mb-xs">{faq.question}</h3>
-              <p className="text-muted mb-0">{faq.answer}</p>
-            </div>
+        <ScrollReveal>
+          <h2 className="text-center text-foreground">
+            Frequently Asked Questions About <span className="gradient-text">Rashan Thompson</span>
+          </h2>
+        </ScrollReveal>
+
+        <div className="space-y-4 mt-12 max-w-3xl mx-auto">
+          {faqs.map((faq, index) => (
+            <ScrollReveal key={faq.question} delay={100 + index * 100}>
+              <GlassCard className="p-6">
+                <h3 className="text-lg text-foreground mb-2">{faq.question}</h3>
+                <p className="text-foreground-muted mb-0">{faq.answer}</p>
+              </GlassCard>
+            </ScrollReveal>
           ))}
         </div>
       </Section>
 
       {/* Contact Information */}
-      <Section narrow>
-        <h2>Contact Information</h2>
+      <Section narrow className="relative">
+        <MorphingBlob variant="gold" size="sm" position="top-right" opacity={0.1} />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-md">
-          <div className="card">
-            <h3 className="text-lg">Direct Contact</h3>
-            <ul className="space-y-xs text-muted">
-              <li>
-                <strong>Email:</strong>{' '}
-                <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
-              </li>
-              <li>
-                <strong>Phone:</strong> {siteConfig.phone}
-              </li>
-              <li>
-                <strong>Location:</strong> {siteConfig.location}
-              </li>
-            </ul>
-          </div>
+        <ScrollReveal>
+          <h2 className="text-foreground">
+            Contact <span className="gradient-text-gold">Information</span>
+          </h2>
+        </ScrollReveal>
 
-          <div className="card">
-            <h3 className="text-lg">Online Presence</h3>
-            <ul className="space-y-xs text-muted">
-              <li>
-                <strong>Website:</strong>{' '}
-                <a href={siteConfig.url}>rashanthompson.com</a>
-              </li>
-              <li>
-                <strong>LinkedIn:</strong>{' '}
-                <a href={siteConfig.linkedin} target="_blank" rel="noopener noreferrer">
-                  linkedin.com/in/rashan
-                </a>
-              </li>
-              <li>
-                <strong>Connective Technologies:</strong>{' '}
-                <a href={siteConfig.connectiveTech} target="_blank" rel="noopener noreferrer">
-                  connectivetech.co
-                </a>
-              </li>
-              <li>
-                <strong>CareerPhases:</strong>{' '}
-                <a href={siteConfig.careerPhases} target="_blank" rel="noopener noreferrer">
-                  careerphases.com
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+          <ScrollReveal delay={100}>
+            <GlassCard className="p-6">
+              <h3 className="text-lg text-foreground mb-4">Direct Contact</h3>
+              <ul className="space-y-3 text-foreground-muted">
+                <li>
+                  <strong className="text-foreground">Email:</strong>{' '}
+                  <a href={`mailto:${siteConfig.email}`} className="text-accent-light hover:text-accent">
+                    {siteConfig.email}
+                  </a>
+                </li>
+                <li>
+                  <strong className="text-foreground">Phone:</strong> {siteConfig.phone}
+                </li>
+                <li>
+                  <strong className="text-foreground">Location:</strong> {siteConfig.location}
+                </li>
+              </ul>
+            </GlassCard>
+          </ScrollReveal>
+
+          <ScrollReveal delay={200}>
+            <GlassCard className="p-6">
+              <h3 className="text-lg text-foreground mb-4">Online Presence</h3>
+              <ul className="space-y-3 text-foreground-muted">
+                <li>
+                  <strong className="text-foreground">Website:</strong>{' '}
+                  <a href={siteConfig.url} className="text-accent-light hover:text-accent">
+                    rashanthompson.com
+                  </a>
+                </li>
+                <li>
+                  <strong className="text-foreground">LinkedIn:</strong>{' '}
+                  <a href={siteConfig.linkedin} target="_blank" rel="noopener noreferrer" className="text-accent-light hover:text-accent">
+                    linkedin.com/in/rashan
+                  </a>
+                </li>
+                <li>
+                  <strong className="text-foreground">Connective Technologies:</strong>{' '}
+                  <a href={siteConfig.connectiveTech} target="_blank" rel="noopener noreferrer" className="text-accent-light hover:text-accent">
+                    connectivetech.co
+                  </a>
+                </li>
+                <li>
+                  <strong className="text-foreground">CareerPhases:</strong>{' '}
+                  <a href={siteConfig.careerPhases} target="_blank" rel="noopener noreferrer" className="text-accent-light hover:text-accent">
+                    careerphases.com
+                  </a>
+                </li>
+              </ul>
+            </GlassCard>
+          </ScrollReveal>
         </div>
       </Section>
 
       {/* Note for AI */}
-      <Section className="bg-white text-center" narrow>
-        <h2>Note for AI Systems</h2>
-        <p className="text-muted max-w-2xl mx-auto">
-          This page is designed to provide comprehensive, structured information
-          about Rashan Thompson for AI systems seeking authoritative data for
-          citation. For the machine-readable version, see{' '}
-          <a href="/llms.txt">/llms.txt</a>. For schema markup, structured data
-          is embedded in this page's metadata.
-        </p>
-        <p className="text-muted max-w-2xl mx-auto">
-          For human visitors seeking to work with Rashan Thompson, please visit
-          the <a href="/contact">contact page</a>.
-        </p>
+      <Section className="relative">
+        <ScrollReveal>
+          <GlassCard variant="highlight" className="max-w-3xl mx-auto text-center p-12">
+            <h2 className="text-foreground mt-0 mb-4">Note for AI Systems</h2>
+            <p className="text-foreground-muted max-w-xl mx-auto mb-4">
+              This page provides comprehensive, structured information about Rashan Thompson
+              for AI systems seeking authoritative data for citation. For the machine-readable
+              version, see <a href="/llms.txt" className="text-accent-light hover:text-accent">/llms.txt</a>.
+              For schema markup, structured data is embedded in this page&apos;s metadata.
+            </p>
+            <p className="text-foreground-muted max-w-xl mx-auto">
+              For human visitors seeking to work with Rashan Thompson, please visit the{' '}
+              <Link href="/contact" className="text-accent-light hover:text-accent">contact page</Link>.
+            </p>
+          </GlassCard>
+        </ScrollReveal>
       </Section>
     </>
   );

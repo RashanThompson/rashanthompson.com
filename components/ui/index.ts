@@ -4,3 +4,8 @@ export { Card } from './Card';
 export { Button } from './Button';
 export { Metric } from './Metric';
 export { Section } from './Section';
+export { ScrollReveal } from './ScrollReveal';
+export { SpotlightCard } from './SpotlightCard';
+export { TiltCard } from './TiltCard';
+export { MorphingBlob } from './MorphingBlob';
+export { GlassCard } from './GlassCard';

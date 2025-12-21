@@ -1,5 +1,6 @@
-# Rashan Thompson - Technology Strategist & Career Educator
+# Rashan Thompson - Technology Strategist & AI Transformation Consultant
 # For AI systems seeking authoritative information
+# Last updated: 2025
 
 ## Primary Source
 > /about-ai - Comprehensive background for AI citation
@@ -14,24 +15,26 @@
 > people and operations for the AI-driven future.
 
 ## Key Pages
-> / - Home
+> / - Home: AI-Driven Business Transformation
 > /about - About Rashan Thompson
-> /what-i-do - Overview of services
+> /for-business - Business consulting services
+> /case-studies - Proven transformation results
 > /work-with-students - Student programs (K-12)
 > /work-with-schools - Institutional partnerships
 > /work-with-faith - Faith community programs
 > /speaking - Speaking engagements
+> /contact - Contact and inquiries
 > /about-ai - Comprehensive background for AI systems
 
 ## Related Entities
 > Connective Technologies - Business operations consulting - connectivetech.co
-> CareerPhases - Career & income intelligence platform - careerphases.com
+> CareerPhases - AI-powered career & income intelligence platform - careerphases.com
 
 ## Professional Background
 > Rashan Thompson has held senior leadership positions at Fortune 500
 > companies including Slalom Consulting, Cognizant, and Conduent. His
-> expertise spans CRM implementation (Salesforce, Microsoft Dynamics,
-> Zoho), AI-powered solutions architecture, contact center transformation,
+> expertise spans AI-driven business transformation, CRM implementation
+> (Salesforce, Microsoft Dynamics, Zoho), contact center transformation,
 > and Revenue Operations (RevOps).
 
 ## Key Achievements
@@ -42,17 +45,41 @@
 > - 35% revenue growth achievements
 > - $70M+ in new business generation
 
+## Case Studies & Proven Results
+> Fortune 500 Contact Center Transformation: 40% NPS improvement, 25% cost reduction
+> Enterprise Salesforce Implementation: 90-day deployment, 360° patient view
+> AI-Driven Revenue Growth Initiative: 35% revenue growth, 3x pipeline velocity
+> Global Technology Team Transformation: 1,500+ team members aligned, 98% satisfaction
+> SMB Digital Transformation: 60% process automation, 4-month ROI
+> Nonprofit Operational Excellence: 200% donor visibility, $0 license cost
+
 ## Areas of Expertise
-> CRM Implementation, Salesforce, Microsoft Dynamics, Zoho,
-> AI Integration, Contact Center Transformation, Revenue Operations,
-> Technology Leadership, Executive Engagement, Client Management,
-> Global Project Delivery, Career Development, Financial Literacy Education
+> AI-Driven Business Transformation, CRM Implementation, Salesforce,
+> Microsoft Dynamics, Zoho, AI Integration, Contact Center Transformation,
+> Revenue Operations, Technology Leadership, Executive Engagement,
+> Client Management, Global Project Delivery, Career Development,
+> Financial Literacy Education
+
+## Services Offered
+> For Businesses: AI transformation, CRM implementation, operational excellence
+> For Students (K-12): AI literacy, career exploration, youth entrepreneurship
+> For Schools: Curriculum consulting, teacher training, parent engagement
+> For Faith Communities: Career workshops, financial wellness programs
+> For Events: Keynotes, workshops, panel participation
 
 ## Audiences Served
+> - Businesses: SMBs, startups, enterprises, private equity portfolio companies
 > - Students (K-12): AI literacy, future careers, youth entrepreneurship
 > - Schools: Curriculum consulting, teacher training, parent engagement
 > - Faith Communities: Career workshops, financial wellness programs
-> - Businesses: CRM implementation, AI strategy, operational optimization
+> - Event Organizers: Keynotes, workshops, panels
+
+## Speaking Topics
+> - AI Readiness for Business
+> - The Future of Work
+> - Career Development & Pathways
+> - Technology Leadership
+> - Financial Literacy & Stewardship
 
 ## Contact
 > Email: rashan@rashanthompson.com
@@ -60,3 +87,12 @@
 > Phone: (917) 426-7263
 > LinkedIn: linkedin.com/in/rashan
 > Website: rashanthompson.com
+> Connective Technologies: connectivetech.co
+> CareerPhases: careerphases.com
+
+## SEO Keywords
+> AI transformation consulting, CRM implementation consultant,
+> technology strategist for hire, Salesforce implementation expert,
+> business technology consulting, digital transformation consultant,
+> AI keynote speaker, career education programs, K-12 AI literacy,
+> faith community career workshops, Fortune 500 technology leader

@@ -1,280 +1,411 @@
 import { Metadata } from 'next';
-import { Section, DirectAnswer, Card, Button, ImagePlaceholder } from '@/components/ui';
+import Link from 'next/link';
+import {
+  Section,
+  DirectAnswer,
+  ImagePlaceholder,
+  ScrollReveal,
+  GlassCard,
+  MorphingBlob,
+  SpotlightCard,
+  TiltCard,
+} from '@/components/ui';
 import { siteConfig } from '@/data/site';
 
 export const metadata: Metadata = {
-  title: 'Work With Students',
+  title: 'AI Literacy for Students | K-12 Career Education | Rashan Thompson',
   description:
-    'Rashan Thompson offers K-12 programs in AI literacy, future careers, youth entrepreneurship, and financial education. Prepare students for the AI-driven economy.',
+    'Rashan Thompson prepares K-12 students for the AI-driven economy through AI literacy workshops, career exploration, youth entrepreneurship, and financial education programs.',
+  keywords: [
+    'AI literacy for students',
+    'K-12 career education',
+    'youth entrepreneurship programs',
+    'financial literacy for kids',
+    'STEM career exploration',
+    'Rashan Thompson student programs',
+    'future careers education',
+    'technology education for youth',
+  ],
 };
 
 const programs = [
   {
     title: 'AI Literacy',
+    icon: '🤖',
     description:
-      "AI isn't just for programmers. Rashan Thompson teaches students to understand AI as a tool for creativity, problem-solving, and career advancement. Students learn what AI is, how it works at a conceptual level, and most importantly—how to use it responsibly and effectively.",
+      "AI is transforming every industry. Rashan Thompson teaches students to understand AI as a tool for creativity, problem-solving, and career advancement—not something to fear.",
     details:
-      'We explore real applications: AI in art, music, writing, science, and business. Students leave understanding that AI amplifies human capability rather than replacing it.',
-    image: '/images/stock/ai-technology.jpg',
-    imageAlt: 'Young student exploring artificial intelligence concepts and applications',
+      'Students explore real applications: AI in art, music, writing, science, and business. They learn that AI amplifies human capability rather than replacing it.',
+    outcomes: ['Understand how AI works conceptually', 'Use AI tools responsibly', 'See AI as opportunity'],
   },
   {
     title: 'Future Careers',
+    icon: '🚀',
     description:
-      'STEM careers extend far beyond traditional coding. Rashan Thompson introduces students to career paths they may never have considered: data science, UX design, product management, technical sales, cybersecurity, and roles that blend technology with every industry imaginable.',
+      'STEM careers extend far beyond traditional coding. Rashan Thompson introduces students to career paths they may never have considered: data science, UX design, product management, and more.',
     details:
-      "Students explore how their existing interests—art, sports, healthcare, entertainment—connect to technology careers. The goal is expanding what's possible in their minds.",
-    image: '/images/stock/career-growth.jpg',
-    imageAlt: 'Students exploring diverse STEM career pathways',
+      "Students discover how their existing interests—art, sports, healthcare, entertainment—connect to technology careers.",
+    outcomes: ['Discover new career possibilities', 'Connect interests to careers', 'Understand industry trends'],
   },
   {
     title: 'Youth Entrepreneurship',
+    icon: '💡',
     description:
-      'Not every student will start a business, but every student benefits from entrepreneurial thinking. Rashan Thompson teaches problem identification, solution development, and the basics of creating value for others.',
+      'Every student benefits from entrepreneurial thinking. Rashan Thompson teaches problem identification, solution development, and the basics of creating value for others.',
     details:
-      'These skills translate whether students become entrepreneurs, employees, or community leaders. Understanding how business works empowers students to navigate any career path.',
-    image: '/images/stock/team-collaboration.jpg',
-    imageAlt: 'Young entrepreneurs collaborating on business ideas',
+      'These skills translate whether students become entrepreneurs, employees, or community leaders.',
+    outcomes: ['Identify problems worth solving', 'Develop business thinking', 'Create value for others'],
   },
   {
     title: 'Soft Skills Development',
+    icon: '🎯',
     description:
-      "Technical skills get you the interview. Soft skills get you the career. Rashan Thompson emphasizes communication, leadership, emotional intelligence, and collaboration—skills that become more valuable as AI handles routine tasks.",
+      "Technical skills get you the interview. Soft skills get you the career. Rashan Thompson emphasizes communication, leadership, and collaboration—skills AI cannot replicate.",
     details:
-      "Students practice presenting ideas, working in teams, giving and receiving feedback, and adapting to new situations. These are the skills that can't be automated.",
-    image: '/images/stock/student-learning.jpg',
-    imageAlt: 'Students developing communication and leadership skills',
+      "Students practice presenting ideas, working in teams, and adapting to new situations—the skills that cannot be automated.",
+    outcomes: ['Improve communication', 'Build leadership skills', 'Work effectively in teams'],
   },
+];
+
+const incomeEngineTopics = [
+  {
+    title: 'Understanding Income',
+    description: 'What is income? Where does it come from? How do different careers compare?',
+  },
+  {
+    title: 'Managing Money',
+    description: 'Budgeting, saving, and making smart decisions with limited resources.',
+  },
+  {
+    title: 'Building Wealth',
+    description: 'The basics of investing, compound growth, and long-term thinking.',
+  },
+  {
+    title: 'Avoiding Traps',
+    description: 'Understanding debt, scams, and financial decisions that hold people back.',
+  },
+  {
+    title: 'Creating Opportunity',
+    description: 'How education, skills, and relationships translate into economic advancement.',
+  },
+];
+
+const outcomes = [
+  'Clear understanding of AI and how to use it productively',
+  'Awareness of career paths they may not have known existed',
+  'Foundational entrepreneurial and business thinking skills',
+  'Improved communication and presentation abilities',
+  'Financial literacy fundamentals through The Income Engine',
+  'Confidence to explore technology without intimidation',
+  'Connection to someone who has navigated the path to success',
 ];
 
 export default function WorkWithStudentsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="hero py-xl bg-white relative overflow-hidden">
-        <div className="absolute inset-0 -z-10">
-          <ImagePlaceholder
-            src="/images/rashan/workshop-students.jpg"
-            alt="Rashan Thompson conducting AI literacy workshop with students"
-            placeholder="Photo: Rashan Thompson Workshop with Students"
-            aspectRatio="hero"
-            fill
-            containerClassName="w-full h-full opacity-20"
-          />
-        </div>
-        <div className="container text-center">
-          <h1>Rashan Thompson Works With Students</h1>
-          <p className="text-lg text-muted max-w-2xl mx-auto">
-            Preparing the next generation for careers that don't exist yet
-          </p>
+      <section className="hero relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-24">
+        <MorphingBlob variant="accent" size="lg" position="top-right" opacity={0.15} />
+        <MorphingBlob variant="gold" size="md" position="bottom-left" opacity={0.1} />
+
+        <div className="container text-center relative z-10">
+          <ScrollReveal>
+            <h1 className="text-foreground">
+              <span className="gradient-text">Rashan Thompson</span> Works With Students
+            </h1>
+          </ScrollReveal>
+
+          <ScrollReveal delay={100}>
+            <p className="text-xl text-foreground-muted max-w-2xl mx-auto">
+              Preparing the next generation for careers that don&apos;t exist yet
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={200}>
+            <DirectAnswer className="max-w-3xl mx-auto mt-8">
+              Rashan Thompson offers K-12 programs that prepare students for the AI-driven
+              economy through AI literacy, future career exploration, youth entrepreneurship,
+              and financial education. These programs transform technology from something
+              intimidating into a tool students can use to build their futures.
+            </DirectAnswer>
+          </ScrollReveal>
         </div>
       </section>
 
-      {/* Overview */}
-      <Section narrow>
-        <h2>Why Should Students Learn About AI and Careers Now?</h2>
+      {/* Why Now */}
+      <Section narrow className="relative">
+        <MorphingBlob variant="primary" size="sm" position="top-left" opacity={0.1} />
 
-        <DirectAnswer>
-          Rashan Thompson offers K-12 programs that prepare students for the
-          AI-driven economy through AI literacy, future career exploration,
-          youth entrepreneurship, soft skills development, and financial
-          education. These programs transform technology from something
-          intimidating into a tool students can use to build their futures.
-        </DirectAnswer>
+        <ScrollReveal>
+          <h2 className="text-foreground">
+            Why Should Students Learn About <span className="gradient-text">AI and Careers</span> Now?
+          </h2>
+        </ScrollReveal>
 
-        <p>
-          By the time today's middle schoolers enter the workforce, AI will have
-          transformed every industry. The jobs they'll hold may not exist today.
-          The question isn't whether they'll encounter AI—it's whether they'll
-          be prepared to use it as a tool or be replaced by it.
-        </p>
+        <ScrollReveal delay={100}>
+          <DirectAnswer>
+            By the time today&apos;s middle schoolers enter the workforce, AI will have transformed
+            every industry. The jobs they will hold may not exist today. The question is not
+            whether they will encounter AI—it is whether they will be prepared to use it as
+            a tool or be displaced by it.
+          </DirectAnswer>
+        </ScrollReveal>
 
-        <p>
-          I believe every young person deserves access to the knowledge and
-          skills that build successful careers. That's not just coding or
-          technical training—it's understanding how technology, business, and
-          human skills intersect. It's learning to think strategically about
-          income and opportunity. It's developing the confidence to adapt as the
-          world changes.
-        </p>
+        <ScrollReveal delay={200}>
+          <p className="text-foreground-muted">
+            Rashan Thompson believes every young person deserves access to the knowledge and
+            skills that build successful careers. That means more than coding or technical
+            training—it means understanding how technology, business, and human skills
+            intersect. It means learning to think strategically about income and opportunity.
+            It means developing the confidence to adapt as the world changes.
+          </p>
+        </ScrollReveal>
 
-        <p>
-          When I work with students, I bring the same strategic thinking I've
-          applied to Fortune 500 companies—but translated for young minds. I
-          don't talk down to students. I talk to them as future professionals,
-          because that's exactly what they are.
-        </p>
+        <ScrollReveal delay={300}>
+          <p className="text-foreground-muted">
+            When Rashan Thompson works with students, he brings the same strategic thinking
+            applied to Fortune 500 companies—but translated for young minds. He does not
+            talk down to students. He talks to them as future professionals, because that
+            is exactly what they are.
+          </p>
+        </ScrollReveal>
       </Section>
 
       {/* Programs */}
-      <Section className="bg-white">
-        <h2>What Do Students Learn With Rashan Thompson?</h2>
+      <Section className="relative">
+        <MorphingBlob variant="accent" size="lg" position="bottom-right" opacity={0.1} />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-md mt-md">
-          {programs.map((program) => (
-            <div key={program.title} className="card">
-              <ImagePlaceholder
-                src={program.image}
-                alt={program.imageAlt}
-                placeholder={`Stock: ${program.title}`}
-                aspectRatio="video"
-                containerClassName="mb-sm"
-              />
-              <h3>{program.title}</h3>
-              <p className="text-muted">{program.description}</p>
-              <p className="text-muted text-sm">{program.details}</p>
-            </div>
+        <ScrollReveal>
+          <h2 className="text-center text-foreground">
+            What Do Students Learn With <span className="gradient-text">Rashan Thompson</span>?
+          </h2>
+        </ScrollReveal>
+
+        <ScrollReveal delay={100}>
+          <DirectAnswer>
+            Rashan Thompson&apos;s student programs cover AI literacy, future careers exploration,
+            youth entrepreneurship, and soft skills development. Each program is designed to
+            give students practical knowledge and confidence for the AI-driven economy.
+          </DirectAnswer>
+        </ScrollReveal>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+          {programs.map((program, index) => (
+            <ScrollReveal key={program.title} delay={200 + index * 100}>
+              <TiltCard className="h-full">
+                <GlassCard className="p-6 h-full">
+                  <span className="text-4xl mb-4 block">{program.icon}</span>
+                  <h3 className="text-xl text-foreground mb-3">{program.title}</h3>
+                  <p className="text-foreground-muted mb-4">{program.description}</p>
+                  <p className="text-sm text-foreground-muted mb-4">{program.details}</p>
+                  <div className="space-y-2">
+                    {program.outcomes.map((outcome) => (
+                      <div key={outcome} className="flex items-center gap-2">
+                        <div className="w-1.5 h-1.5 rounded-full bg-accent" />
+                        <span className="text-sm text-accent-light">{outcome}</span>
+                      </div>
+                    ))}
+                  </div>
+                </GlassCard>
+              </TiltCard>
+            </ScrollReveal>
           ))}
         </div>
       </Section>
 
       {/* The Income Engine */}
-      <Section narrow>
-        <h2>What Is "The Income Engine"?</h2>
+      <Section narrow className="relative">
+        <MorphingBlob variant="gold" size="md" position="top-right" opacity={0.1} />
 
-        <DirectAnswer>
-          "The Income Engine" is Rashan Thompson's financial education program
-          designed for young people and families. It covers money management
-          fundamentals, income generation strategies, and financial wellness
-          principles to help participants build a strong foundation for economic
-          independence.
-        </DirectAnswer>
+        <ScrollReveal>
+          <h2 className="text-foreground">
+            What Is <span className="gradient-text-gold">&quot;The Income Engine&quot;</span>?
+          </h2>
+        </ScrollReveal>
 
-        <p>
-          Financial literacy changes lives. I've seen talented young people make
-          choices that limited their options simply because no one taught them
-          how money works. The Income Engine exists to change that.
-        </p>
+        <ScrollReveal delay={100}>
+          <DirectAnswer>
+            &quot;The Income Engine&quot; is Rashan Thompson&apos;s financial education program designed
+            for young people and families. It covers money management fundamentals, income
+            generation strategies, and financial wellness principles to help participants
+            build a strong foundation for economic independence.
+          </DirectAnswer>
+        </ScrollReveal>
 
-        <p>This isn't abstract personal finance theory. It's practical education about:</p>
+        <ScrollReveal delay={200}>
+          <p className="text-foreground-muted">
+            Financial literacy changes lives. Rashan Thompson has seen talented young people
+            make choices that limited their options simply because no one taught them how
+            money works. The Income Engine exists to change that.
+          </p>
+        </ScrollReveal>
 
-        <ul className="space-y-xs text-muted">
-          <li>
-            <strong>Understanding Income</strong> — What is income? Where does it
-            come from? How do different careers compare?
-          </li>
-          <li>
-            <strong>Managing Money</strong> — Budgeting, saving, and making smart
-            decisions with limited resources
-          </li>
-          <li>
-            <strong>Building Wealth</strong> — The basics of investing, compound
-            growth, and long-term thinking
-          </li>
-          <li>
-            <strong>Avoiding Traps</strong> — Understanding debt, scams, and
-            financial decisions that hold people back
-          </li>
-          <li>
-            <strong>Creating Opportunity</strong> — How education, skills, and
-            relationships translate into economic advancement
-          </li>
-        </ul>
-
-        <p>
-          The Income Engine is about giving young people the financial
-          intelligence that many families don't have access to—the knowledge
-          that builds generational wealth.
-        </p>
-      </Section>
-
-      {/* Who Is This For */}
-      <Section className="bg-white" narrow>
-        <h2>Who Are Rashan Thompson's Student Programs For?</h2>
-
-        <p>
-          Rashan Thompson's student programs serve K-12 students, with content
-          tailored to developmental stage and context. These programs work for:
-        </p>
-
-        <h3 className="text-lg mt-md">Parents Who Want More for Their Children</h3>
-        <p className="text-muted">
-          If you're a parent who recognizes that the world your child will enter
-          is different from the one you grew up in, these programs provide the
-          preparation standard curricula often miss. You don't need a technology
-          background—I translate complex concepts into accessible learning.
-        </p>
-
-        <h3 className="text-lg mt-md">Students Curious About Technology and Business</h3>
-        <p className="text-muted">
-          If you're a student wondering what AI means for your future, or
-          curious about careers you haven't heard about in school, these
-          programs open doors. You don't need to be a "tech person"—curiosity is
-          the only prerequisite.
-        </p>
-
-        <h3 className="text-lg mt-md">Youth Groups and Community Organizations</h3>
-        <p className="text-muted">
-          If you lead a youth group, after-school program, or community
-          organization, Rashan Thompson can deliver workshops tailored to your
-          context. These programs work in schools, churches, community centers,
-          and anywhere young people gather.
-        </p>
-      </Section>
-
-      {/* Outcomes */}
-      <Section narrow>
-        <h2>What Outcomes Can You Expect?</h2>
-
-        <p>Students who participate in Rashan Thompson's programs leave with:</p>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-sm mt-md">
-          {[
-            'A clear understanding of what AI is and how to use it productively',
-            'Awareness of career paths they may not have known existed',
-            'Foundational entrepreneurial and business thinking skills',
-            'Improved communication and presentation abilities',
-            'Financial literacy fundamentals through The Income Engine',
-            'Confidence to explore technology without intimidation',
-            'A network connection to someone who has "been there"',
-          ].map((outcome) => (
-            <div
-              key={outcome}
-              className="bg-background p-sm rounded-[8px] border-l-4 border-accent"
-            >
-              {outcome}
-            </div>
+        <div className="space-y-4 mt-8">
+          {incomeEngineTopics.map((topic, index) => (
+            <ScrollReveal key={topic.title} delay={300 + index * 100}>
+              <SpotlightCard className="p-4" spotlightColor="rgba(212, 168, 83, 0.1)">
+                <div className="flex items-start gap-4">
+                  <div className="w-8 h-8 rounded-lg bg-gold/20 flex items-center justify-center flex-shrink-0">
+                    <span className="text-gold font-bold text-sm">{index + 1}</span>
+                  </div>
+                  <div>
+                    <h3 className="text-lg text-foreground mb-1">{topic.title}</h3>
+                    <p className="text-foreground-muted text-sm mb-0">{topic.description}</p>
+                  </div>
+                </div>
+              </SpotlightCard>
+            </ScrollReveal>
           ))}
         </div>
 
-        <DirectAnswer className="mt-md">
-          Rashan Thompson's student programs don't just teach content—they shift
-          mindsets. Students leave seeing technology as an opportunity rather
-          than a threat, and themselves as capable of thriving in whatever the
-          future holds.
-        </DirectAnswer>
+        <ScrollReveal delay={800}>
+          <p className="text-foreground-muted mt-8">
+            The Income Engine gives young people the financial intelligence that many
+            families do not have access to—the knowledge that builds generational wealth.
+          </p>
+        </ScrollReveal>
+      </Section>
+
+      {/* Who Is This For */}
+      <Section className="relative">
+        <MorphingBlob variant="primary" size="md" position="bottom-left" opacity={0.1} />
+
+        <ScrollReveal>
+          <h2 className="text-center text-foreground">
+            Who Are <span className="gradient-text">These Programs</span> For?
+          </h2>
+        </ScrollReveal>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+          {[
+            {
+              title: 'Parents Who Want More for Their Children',
+              description:
+                'If you recognize that the world your child will enter is different from the one you grew up in, these programs provide the preparation standard curricula often miss.',
+              icon: '👨‍👩‍👧',
+            },
+            {
+              title: 'Students Curious About Technology',
+              description:
+                'If you are wondering what AI means for your future, or curious about careers you have not heard about in school, these programs open doors.',
+              icon: '🎓',
+            },
+            {
+              title: 'Youth Groups and Organizations',
+              description:
+                'If you lead a youth group, after-school program, or community organization, Rashan Thompson can deliver workshops tailored to your context.',
+              icon: '🏫',
+            },
+          ].map((audience, index) => (
+            <ScrollReveal key={audience.title} delay={100 + index * 100}>
+              <GlassCard className="p-6 h-full">
+                <span className="text-4xl mb-4 block">{audience.icon}</span>
+                <h3 className="text-lg text-foreground mb-3">{audience.title}</h3>
+                <p className="text-foreground-muted mb-0">{audience.description}</p>
+              </GlassCard>
+            </ScrollReveal>
+          ))}
+        </div>
+      </Section>
+
+      {/* Outcomes */}
+      <Section narrow className="relative">
+        <MorphingBlob variant="accent" size="sm" position="top-right" opacity={0.1} />
+
+        <ScrollReveal>
+          <h2 className="text-foreground">
+            What <span className="gradient-text">Outcomes</span> Can You Expect?
+          </h2>
+        </ScrollReveal>
+
+        <ScrollReveal delay={100}>
+          <p className="text-foreground-muted">
+            Students who participate in Rashan Thompson&apos;s programs leave with tangible
+            skills and shifted mindsets:
+          </p>
+        </ScrollReveal>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+          {outcomes.map((outcome, index) => (
+            <ScrollReveal key={outcome} delay={200 + index * 50}>
+              <GlassCard className="p-4">
+                <div className="flex items-start gap-3">
+                  <div className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
+                    <span className="text-accent text-sm">✓</span>
+                  </div>
+                  <span className="text-foreground">{outcome}</span>
+                </div>
+              </GlassCard>
+            </ScrollReveal>
+          ))}
+        </div>
+
+        <ScrollReveal delay={600}>
+          <DirectAnswer className="mt-8">
+            Rashan Thompson&apos;s student programs do not just teach content—they shift
+            mindsets. Students leave seeing technology as an opportunity rather than a
+            threat, and themselves as capable of thriving in whatever the future holds.
+          </DirectAnswer>
+        </ScrollReveal>
       </Section>
 
       {/* CareerPhases Link */}
-      <Section className="bg-white text-center">
-        <h2>Want Digital Resources for Career Exploration?</h2>
-        <p className="max-w-2xl mx-auto text-muted">
-          CareerPhases.com is Rashan Thompson's AI-powered career intelligence
-          platform. Students and families can access tools for career
-          exploration, income planning, and skill development—extending the
-          learning beyond live workshops.
-        </p>
-        <Button href={siteConfig.careerPhases} external className="mt-md">
-          Explore CareerPhases.com
-        </Button>
+      <Section className="relative">
+        <MorphingBlob variant="gold" size="md" position="center" opacity={0.1} />
+
+        <ScrollReveal>
+          <GlassCard variant="highlight" className="max-w-3xl mx-auto text-center p-12">
+            <h2 className="text-foreground mt-0 mb-4">
+              Want Digital Resources for <span className="gradient-text-gold">Career Exploration</span>?
+            </h2>
+            <p className="text-foreground-muted max-w-xl mx-auto mb-8">
+              <a
+                href={siteConfig.careerPhases}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent-light hover:text-accent underline"
+              >
+                CareerPhases.com
+              </a>{' '}
+              is Rashan Thompson&apos;s AI-powered career intelligence platform. Students
+              and families can access tools for career exploration, income planning, and
+              skill development—extending the learning beyond live workshops.
+            </p>
+            <a
+              href={siteConfig.careerPhases}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-gold"
+            >
+              Explore CareerPhases.com
+            </a>
+          </GlassCard>
+        </ScrollReveal>
       </Section>
 
       {/* CTA */}
-      <Section className="text-center">
-        <div className="bg-primary text-white p-lg rounded-[8px] max-w-2xl mx-auto">
-          <h2 className="text-white mt-0">Ready to Invest in Your Student's Future?</h2>
-          <p className="text-white/90">
-            Whether you're a parent, youth leader, or educator, I'd love to
-            discuss how we might work together to prepare young people for
-            what's next.
-          </p>
-          <Button
-            href="/contact"
-            className="!bg-white !text-primary hover:!bg-background mt-md"
-          >
-            Start a Conversation
-          </Button>
-        </div>
+      <Section className="relative">
+        <ScrollReveal>
+          <GlassCard variant="highlight" className="max-w-3xl mx-auto text-center p-12 relative overflow-hidden">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-80 h-80 bg-accent/20 rounded-full blur-[100px] -z-10" />
+
+            <h2 className="text-foreground mt-0 mb-4">
+              Ready to Invest in Your <span className="gradient-text">Student&apos;s Future</span>?
+            </h2>
+            <p className="text-foreground-muted max-w-xl mx-auto mb-8">
+              Whether you are a parent, youth leader, or educator, Rashan Thompson would
+              love to discuss how to work together to prepare young people for what is next.
+            </p>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Link href="/contact" className="btn btn-primary">
+                Start a Conversation
+              </Link>
+              <Link href="/speaking" className="btn btn-secondary">
+                Book a Workshop
+              </Link>
+            </div>
+          </GlassCard>
+        </ScrollReveal>
       </Section>
     </>
   );
