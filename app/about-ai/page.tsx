@@ -201,11 +201,11 @@ export default function AboutAIPage() {
             <h3 className="text-lg text-foreground mb-4">Career History</h3>
             <div className="space-y-3">
               {[
-                'Connective Technologies — Founder & CEO (Present)',
-                'CareerPhases.com — Creator (Present)',
-                'Slalom Consulting — Senior Principal, Healthcare & Life Sciences',
-                'Cognizant — Salesforce Practice Director',
-                'Conduent — Director of IT Service Delivery',
+                'Connective Technologies  - Founder & CEO (Present)',
+                'CareerPhases.com  - Creator (Present)',
+                'Slalom Consulting  - Senior Principal, Healthcare & Life Sciences',
+                'Cognizant  - Salesforce Practice Director',
+                'Conduent  - Director of IT Service Delivery',
               ].map((role, index) => (
                 <GlassCard key={role} className="p-3">
                   <span className="text-foreground">{role}</span>

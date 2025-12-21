@@ -140,7 +140,7 @@ export default function ContactPage() {
 
               <p className="text-foreground-muted">
                 Whether you are a parent, educator, faith leader, or business owner, share
-                what you are working on. There is no pressure and no obligation—just a
+                what you are working on. There is no pressure and no obligation -just a
                 conversation about possibilities.
               </p>
 
@@ -337,7 +337,7 @@ export default function ContactPage() {
         <ScrollReveal delay={500}>
           <DirectAnswer className="mt-8">
             Rashan Thompson personally reads and responds to every inquiry. There is no sales
-            pressure, no pricing discussion in the first conversation—just an honest exploration
+            pressure, no pricing discussion in the first conversation -just an honest exploration
             of whether working together makes sense for your situation.
           </DirectAnswer>
         </ScrollReveal>

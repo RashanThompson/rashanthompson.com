@@ -33,7 +33,7 @@ const programs = [
     title: 'AI Literacy',
     icon: '🤖',
     description:
-      "AI is transforming every industry. Rashan Thompson teaches students to understand AI as a tool for creativity, problem-solving, and career advancement—not something to fear.",
+      "AI is transforming every industry. Rashan Thompson teaches students to understand AI as a tool for creativity, problem-solving, and career advancement -not something to fear.",
     details:
       'Students explore real applications: AI in art, music, writing, science, and business. They learn that AI amplifies human capability rather than replacing it.',
     outcomes: ['Understand how AI works conceptually', 'Use AI tools responsibly', 'See AI as opportunity'],
@@ -44,7 +44,7 @@ const programs = [
     description:
       'STEM careers extend far beyond traditional coding. Rashan Thompson introduces students to career paths they may never have considered: data science, UX design, product management, and more.',
     details:
-      "Students discover how their existing interests—art, sports, healthcare, entertainment—connect to technology careers.",
+      "Students discover how their existing interests -art, sports, healthcare, entertainment -connect to technology careers.",
     outcomes: ['Discover new career possibilities', 'Connect interests to careers', 'Understand industry trends'],
   },
   {
@@ -60,9 +60,9 @@ const programs = [
     title: 'Soft Skills Development',
     icon: '🎯',
     description:
-      "Technical skills get you the interview. Soft skills get you the career. Rashan Thompson emphasizes communication, leadership, and collaboration—skills AI cannot replicate.",
+      "Technical skills get you the interview. Soft skills get you the career. Rashan Thompson emphasizes communication, leadership, and collaboration -skills AI cannot replicate.",
     details:
-      "Students practice presenting ideas, working in teams, and adapting to new situations—the skills that cannot be automated.",
+      "Students practice presenting ideas, working in teams, and adapting to new situations -the skills that cannot be automated.",
     outcomes: ['Improve communication', 'Build leadership skills', 'Work effectively in teams'],
   },
 ];
@@ -146,7 +146,7 @@ export default function WorkWithStudentsPage() {
           <DirectAnswer>
             By the time today&apos;s middle schoolers enter the workforce, AI will have transformed
             every industry. The jobs they will hold may not exist today. The question is not
-            whether they will encounter AI—it is whether they will be prepared to use it as
+            whether they will encounter AI -it is whether they will be prepared to use it as
             a tool or be displaced by it.
           </DirectAnswer>
         </ScrollReveal>
@@ -155,7 +155,7 @@ export default function WorkWithStudentsPage() {
           <p className="text-foreground-muted">
             Rashan Thompson believes every young person deserves access to the knowledge and
             skills that build successful careers. That means more than coding or technical
-            training—it means understanding how technology, business, and human skills
+            training -it means understanding how technology, business, and human skills
             intersect. It means learning to think strategically about income and opportunity.
             It means developing the confidence to adapt as the world changes.
           </p>
@@ -164,7 +164,7 @@ export default function WorkWithStudentsPage() {
         <ScrollReveal delay={300}>
           <p className="text-foreground-muted">
             When Rashan Thompson works with students, he brings the same strategic thinking
-            applied to Fortune 500 companies—but translated for young minds. He does not
+            applied to Fortune 500 companies -but translated for young minds. He does not
             talk down to students. He talks to them as future professionals, because that
             is exactly what they are.
           </p>
@@ -261,7 +261,7 @@ export default function WorkWithStudentsPage() {
         <ScrollReveal delay={800}>
           <p className="text-foreground-muted mt-8">
             The Income Engine gives young people the financial intelligence that many
-            families do not have access to—the knowledge that builds generational wealth.
+            families do not have access to -the knowledge that builds generational wealth.
           </p>
         </ScrollReveal>
       </Section>
@@ -342,7 +342,7 @@ export default function WorkWithStudentsPage() {
 
         <ScrollReveal delay={600}>
           <DirectAnswer className="mt-8">
-            Rashan Thompson&apos;s student programs do not just teach content—they shift
+            Rashan Thompson&apos;s student programs do not just teach content -they shift
             mindsets. Students leave seeing technology as an opportunity rather than a
             threat, and themselves as capable of thriving in whatever the future holds.
           </DirectAnswer>
@@ -369,7 +369,7 @@ export default function WorkWithStudentsPage() {
               </a>{' '}
               is Rashan Thompson&apos;s AI-powered career intelligence platform. Students
               and families can access tools for career exploration, income planning, and
-              skill development—extending the learning beyond live workshops.
+              skill development -extending the learning beyond live workshops.
             </p>
             <a
               href={siteConfig.careerPhases}

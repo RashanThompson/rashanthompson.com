@@ -67,7 +67,7 @@ export const caseStudies: Record<string, CaseStudy> = {
       { metric: '35%', label: 'AHT Reduction', description: 'Average Handle Time reduced from 12 to 8 minutes' },
     ],
     testimonial: {
-      quote: "Rashan didn't just implement technology—he transformed how we think about customer service. His ability to align technology with business outcomes while bringing our teams along was exceptional.",
+      quote: "Rashan didn't just implement technology -he transformed how we think about customer service. His ability to align technology with business outcomes while bringing our teams along was exceptional.",
       author: 'Chief Customer Officer',
       role: 'Fortune 500 Financial Services',
     },
@@ -116,7 +116,7 @@ export const caseStudies: Record<string, CaseStudy> = {
       { metric: '100%', label: 'Compliance', description: 'HIPAA audit passed with zero findings' },
     ],
     testimonial: {
-      quote: "We had tried twice before to unify our patient data and failed. Rashan's approach was different—he understood healthcare workflows, not just Salesforce. The 90-day timeline seemed impossible, but he delivered.",
+      quote: "We had tried twice before to unify our patient data and failed. Rashan's approach was different -he understood healthcare workflows, not just Salesforce. The 90-day timeline seemed impossible, but he delivered.",
       author: 'Chief Information Officer',
       role: 'Regional Healthcare Network',
     },
@@ -165,7 +165,7 @@ export const caseStudies: Record<string, CaseStudy> = {
       { metric: '40%', label: 'Time Savings', description: 'Reduction in administrative tasks' },
     ],
     testimonial: {
-      quote: "The AI isn't replacing our salespeople—it's making them superhuman. They now spend time on deals that actually close. Rashan understood that the technology had to serve the people, not the other way around.",
+      quote: "The AI isn't replacing our salespeople -it's making them superhuman. They now spend time on deals that actually close. Rashan understood that the technology had to serve the people, not the other way around.",
       author: 'VP of Sales',
       role: 'Technology Services Provider',
     },
@@ -263,7 +263,7 @@ export const caseStudies: Record<string, CaseStudy> = {
       { metric: '2x', label: 'Order Capacity', description: 'Without adding headcount' },
     ],
     testimonial: {
-      quote: "We thought digital transformation was something only big companies could do. Rashan showed us it was not only possible for a company our size—it was essential for our survival.",
+      quote: "We thought digital transformation was something only big companies could do. Rashan showed us it was not only possible for a company our size -it was essential for our survival.",
       author: 'CEO',
       role: 'Regional Manufacturing Company',
     },

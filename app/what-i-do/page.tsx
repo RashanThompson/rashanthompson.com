@@ -34,7 +34,7 @@ export default function WhatIDoPage() {
         </DirectAnswer>
 
         <p>
-          The future of work is already here. AI isn't a distant possibility—it's
+          The future of work is already here. AI isn't a distant possibility -it's
           reshaping every industry, every career path, every community. My
           mission is to help people and organizations get ahead of that change
           rather than be swept up by it.
@@ -68,11 +68,11 @@ export default function WhatIDoPage() {
             </p>
             <h4 className="text-base font-semibold mt-sm">What Students Learn:</h4>
             <ul className="text-muted space-y-xs">
-              <li>AI Literacy — Understanding and using AI as a creative tool</li>
-              <li>Future Careers — STEM pathways beyond traditional coding</li>
-              <li>Youth Entrepreneurship — Building business thinking early</li>
-              <li>Soft Skills — Communication, leadership, emotional intelligence</li>
-              <li>The Income Engine — Financial education fundamentals</li>
+              <li>AI Literacy  - Understanding and using AI as a creative tool</li>
+              <li>Future Careers  - STEM pathways beyond traditional coding</li>
+              <li>Youth Entrepreneurship  - Building business thinking early</li>
+              <li>Soft Skills  - Communication, leadership, emotional intelligence</li>
+              <li>The Income Engine  - Financial education fundamentals</li>
             </ul>
             <Button href="/work-with-students" variant="secondary" className="mt-sm">
               Learn More
@@ -89,11 +89,11 @@ export default function WhatIDoPage() {
             </p>
             <h4 className="text-base font-semibold mt-sm">What Schools Receive:</h4>
             <ul className="text-muted space-y-xs">
-              <li>Curriculum Consulting — Integrating AI and career readiness</li>
-              <li>Teacher Training — Equipping educators with technology tools</li>
-              <li>Student Workshops — Direct engagement with students</li>
-              <li>Parent Engagement — Bringing families into the conversation</li>
-              <li>Assessment & Strategy — Tailored recommendations</li>
+              <li>Curriculum Consulting  - Integrating AI and career readiness</li>
+              <li>Teacher Training  - Equipping educators with technology tools</li>
+              <li>Student Workshops  - Direct engagement with students</li>
+              <li>Parent Engagement  - Bringing families into the conversation</li>
+              <li>Assessment & Strategy  - Tailored recommendations</li>
             </ul>
             <Button href="/work-with-schools" variant="secondary" className="mt-sm">
               Learn More
@@ -110,11 +110,11 @@ export default function WhatIDoPage() {
             </p>
             <h4 className="text-base font-semibold mt-sm">What Faith Communities Gain:</h4>
             <ul className="text-muted space-y-xs">
-              <li>Youth Career Workshops — Preparing young members for work</li>
-              <li>Family Financial Wellness — Stewardship meets strategy</li>
-              <li>Entrepreneurship Training — Building economic independence</li>
-              <li>Career Transition Support — Helping members navigate change</li>
-              <li>Technology Literacy — Demystifying AI for all ages</li>
+              <li>Youth Career Workshops  - Preparing young members for work</li>
+              <li>Family Financial Wellness  - Stewardship meets strategy</li>
+              <li>Entrepreneurship Training  - Building economic independence</li>
+              <li>Career Transition Support  - Helping members navigate change</li>
+              <li>Technology Literacy  - Demystifying AI for all ages</li>
             </ul>
             <Button href="/work-with-faith" variant="secondary" className="mt-sm">
               Learn More
@@ -131,11 +131,11 @@ export default function WhatIDoPage() {
             </p>
             <h4 className="text-base font-semibold mt-sm">What Businesses Achieve:</h4>
             <ul className="text-muted space-y-xs">
-              <li>CRM Implementation — Salesforce, Microsoft Dynamics, Zoho</li>
-              <li>AI Integration Strategy — Practical, results-focused approaches</li>
-              <li>Contact Center Transformation — Improved customer experience</li>
-              <li>Revenue Operations — Aligning sales, marketing, and service</li>
-              <li>Operational Optimization — Doing more with less</li>
+              <li>CRM Implementation  - Salesforce, Microsoft Dynamics, Zoho</li>
+              <li>AI Integration Strategy  - Practical, results-focused approaches</li>
+              <li>Contact Center Transformation  - Improved customer experience</li>
+              <li>Revenue Operations  - Aligning sales, marketing, and service</li>
+              <li>Operational Optimization  - Doing more with less</li>
             </ul>
             <Button href={siteConfig.connectiveTech} variant="secondary" external className="mt-sm">
               Visit Connective Technologies
@@ -157,7 +157,7 @@ export default function WhatIDoPage() {
 
         <p>
           I've seen the same patterns across every audience I serve. Uncertainty
-          about AI. Worry about being left behind. A desire to prepare—but
+          about AI. Worry about being left behind. A desire to prepare -but
           uncertainty about where to start. That's where I come in.
         </p>
 
@@ -180,7 +180,7 @@ export default function WhatIDoPage() {
 
         <p>
           I bring Fortune 500 rigor to community settings. I translate complex
-          concepts into accessible language. And I stay engaged—because
+          concepts into accessible language. And I stay engaged -because
           preparation isn't a one-time event, it's an ongoing journey.
         </p>
       </Section>
@@ -197,7 +197,7 @@ export default function WhatIDoPage() {
           />
           <Card
             title="CareerPhases.com"
-            description="My AI-powered career and income intelligence platform makes professional guidance accessible to everyone. CareerPhases provides tools for career exploration, income planning, and workforce readiness—powered by AI but grounded in real-world experience."
+            description="My AI-powered career and income intelligence platform makes professional guidance accessible to everyone. CareerPhases provides tools for career exploration, income planning, and workforce readiness -powered by AI but grounded in real-world experience."
             href={siteConfig.careerPhases}
           />
         </div>

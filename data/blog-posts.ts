@@ -15,13 +15,13 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     slug: 'ai-wont-replace-you-but-someone-using-ai-will',
-    title: "AI Won't Replace You—But Someone Using AI Will",
+    title: "AI Won't Replace You -But Someone Using AI Will",
     excerpt:
       'The real threat to your career isn\'t artificial intelligence itself. It\'s the professionals in your field who learn to leverage AI while you\'re still debating whether to adopt it.',
     content: `
 ## The AI Adoption Curve Is Steeper Than You Think
 
-By 2030, AI is projected to displace 85 million jobs while simultaneously creating 97 million new roles. But here's what that statistic doesn't tell you: the people filling those 97 million new roles won't be the same people displaced from the 85 million old ones—unless they adapt.
+By 2030, AI is projected to displace 85 million jobs while simultaneously creating 97 million new roles. But here's what that statistic doesn't tell you: the people filling those 97 million new roles won't be the same people displaced from the 85 million old ones -unless they adapt.
 
 I've spent 25+ years leading technology transformations at Fortune 500 companies. I've watched entire departments become obsolete not because the technology replaced them, but because they refused to evolve with it.
 
@@ -65,11 +65,11 @@ The most valuable professionals in the AI era will be those who can translate be
 
 ## The Choice Is Yours
 
-Every major technological shift creates winners and losers. The printing press didn't eliminate writers—it created new opportunities for those who adapted. The internet didn't eliminate businesses—it rewarded those who evolved.
+Every major technological shift creates winners and losers. The printing press didn't eliminate writers -it created new opportunities for those who adapted. The internet didn't eliminate businesses -it rewarded those who evolved.
 
 AI is no different. The question isn't whether AI will change your industry. It's whether you'll be among those leading the change or those being left behind.
 
-The professionals who invest in AI literacy now—while it still feels optional—will have a significant advantage over those who wait until it feels mandatory.
+The professionals who invest in AI literacy now -while it still feels optional -will have a significant advantage over those who wait until it feels mandatory.
 
 Which side of that divide do you want to be on?
     `,
@@ -144,7 +144,7 @@ Get these elements right, and your CRM becomes a competitive advantage. Get them
     slug: 'teaching-kids-about-ai-without-the-hype',
     title: 'Teaching Kids About AI (Without the Hype or the Fear)',
     excerpt:
-      'How to help young people develop genuine AI literacy—understanding both its capabilities and its limitations.',
+      'How to help young people develop genuine AI literacy -understanding both its capabilities and its limitations.',
     content: `
 ## Beyond the Headlines
 
@@ -152,7 +152,7 @@ When I speak at schools about AI, I often start by asking students what they thi
 
 Both perspectives come from the same source: media coverage that prioritizes drama over accuracy.
 
-The reality is far more interesting—and far more useful for young people to understand.
+The reality is far more interesting -and far more useful for young people to understand.
 
 ## What AI Actually Is (In Terms Kids Can Understand)
 
@@ -190,7 +190,7 @@ AI literacy isn't separate from financial literacy. Young people who understand 
 
 ## Looking Ahead
 
-The kids in school today will graduate into a workforce where AI is ubiquitous. The question isn't whether they'll need to work with AI—it's whether they'll be prepared to do so thoughtfully and effectively.
+The kids in school today will graduate into a workforce where AI is ubiquitous. The question isn't whether they'll need to work with AI -it's whether they'll be prepared to do so thoughtfully and effectively.
 
 Our job as parents, educators, and community leaders is to give them that preparation.
     `,
@@ -214,7 +214,7 @@ But here's what I've learned after 25+ years in technology leadership: the most 
 
 ## Lesson 1: Your Network Is Your Net Worth
 
-Early in my career, I focused entirely on technical skills. I wanted to be the best at what I did. That mattered—but not as much as I thought.
+Early in my career, I focused entirely on technical skills. I wanted to be the best at what I did. That mattered -but not as much as I thought.
 
 What actually opened doors was relationships. Mentors who saw potential. Colleagues who made introductions. Leaders who took chances on me.
 
@@ -242,7 +242,7 @@ These became competitive advantages, not disadvantages.
 
 I didn't wait until I was successful to start giving back. I started mentoring when I was still figuring things out myself. I started teaching when I was still learning.
 
-This wasn't just altruistic—it was strategic. Teaching others deepened my own understanding. Mentoring built my network. Giving back created opportunities.
+This wasn't just altruistic -it was strategic. Teaching others deepened my own understanding. Mentoring built my network. Giving back created opportunities.
 
 ## Lesson 5: The System Isn't Fair, But That's Not the End of the Story
 
@@ -254,7 +254,7 @@ I've faced situations where I was underestimated because of where I came from or
 
 ## Why This Matters Now
 
-I share these lessons because I work with young people who are exactly where I was decades ago—talented, ambitious, and wondering if the path forward is really open to them.
+I share these lessons because I work with young people who are exactly where I was decades ago -talented, ambitious, and wondering if the path forward is really open to them.
 
 It is. But it requires intention, persistence, and the right guidance.
 

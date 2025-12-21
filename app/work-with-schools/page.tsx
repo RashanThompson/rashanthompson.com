@@ -31,7 +31,7 @@ const offerings = [
     title: 'Curriculum Consulting',
     icon: '📚',
     description:
-      "Rashan Thompson works with curriculum directors and department heads to integrate AI literacy and career readiness into existing programs. This is not about adding another subject—it is about weaving future-ready skills into what you are already teaching.",
+      "Rashan Thompson works with curriculum directors and department heads to integrate AI literacy and career readiness into existing programs. This is not about adding another subject -it is about weaving future-ready skills into what you are already teaching.",
     details:
       "Assessment of current curriculum, identification of integration opportunities, and development of implementation roadmaps that respect teachers' capacity and students' developmental stages.",
     outcomes: ['Integrated AI literacy', 'Career-ready curriculum', 'Teacher-sustainable approach'],
@@ -139,7 +139,7 @@ export default function WorkWithSchoolsPage() {
           <DirectAnswer>
             Most school administrators know their students need preparation for an AI-driven
             economy. The challenge is finding partners who have actually operated at the
-            intersection of technology and business—not just read about it. Rashan Thompson
+            intersection of technology and business -not just read about it. Rashan Thompson
             brings 25+ years of Fortune 500 experience directly into classrooms.
           </DirectAnswer>
         </ScrollReveal>
@@ -148,7 +148,7 @@ export default function WorkWithSchoolsPage() {
           <p className="text-foreground-muted">
             Rashan Thompson has led teams of 1,500+ members, managed $100M+ in P&L responsibility,
             and delivered measurable results at Slalom, Cognizant, and Conduent. Now he is
-            committed to bringing that expertise to the communities that need it most—starting
+            committed to bringing that expertise to the communities that need it most -starting
             in classrooms.
           </p>
         </ScrollReveal>
@@ -321,7 +321,7 @@ export default function WorkWithSchoolsPage() {
         <ScrollReveal delay={100}>
           <p className="text-foreground-muted">
             Every school partnership begins with conversation. Rashan Thompson does not offer
-            cookie-cutter programs—everything is tailored to your context, your students, and
+            cookie-cutter programs -everything is tailored to your context, your students, and
             your goals.
           </p>
         </ScrollReveal>

@@ -113,7 +113,7 @@ export default function SpeakingPage() {
 
         <ScrollReveal delay={100}>
           <DirectAnswer>
-            The best speakers do more than share information—they change how audiences think.
+            The best speakers do more than share information -they change how audiences think.
             After a session with Rashan Thompson, your audience will not just know more facts.
             They will see technology differently, understand their own capabilities differently,
             and leave with actionable steps they can take immediately.
@@ -124,7 +124,7 @@ export default function SpeakingPage() {
           <p className="text-foreground-muted">
             Rashan Thompson brings the same strategic rigor to speaking that he brought to
             leading teams of 1,500+ members at Fortune 500 companies. Every presentation is
-            prepared with your audience in mind—their context, their challenges, their questions.
+            prepared with your audience in mind -their context, their challenges, their questions.
             He does not recycle generic content. He crafts experiences that serve the people
             in the room.
           </p>
@@ -222,7 +222,7 @@ export default function SpeakingPage() {
           <DirectAnswer>
             Rashan Thompson speaks at corporate conferences, educational institutions, faith
             communities, and nonprofit organizations. His audiences range from Fortune 500
-            executives to middle school students—and he adjusts his approach for each.
+            executives to middle school students -and he adjusts his approach for each.
           </DirectAnswer>
         </ScrollReveal>
 

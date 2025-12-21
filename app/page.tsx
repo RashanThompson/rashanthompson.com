@@ -151,7 +151,7 @@ export default function HomePage() {
           <ScrollReveal variant="fadeUp" delay={300}>
             <p className="hero-subtitle">
               By 2030, AI will displace 85 million jobs while creating 97 million new roles.
-              The question isn't whether AI will reshape your industry—it's whether you'll lead the change or follow it.
+              The question isn't whether AI will reshape your industry -it's whether you'll lead the change or follow it.
             </p>
           </ScrollReveal>
 
@@ -284,7 +284,7 @@ export default function HomePage() {
 
         <ScrollReveal delay={200}>
           <p>
-            I've spent over two decades at the intersection of technology and human potential—leading
+            I've spent over two decades at the intersection of technology and human potential -leading
             digital transformations at Fortune 500 companies including <strong>Slalom Consulting</strong>,
             <strong> Cognizant</strong>, and <strong>Conduent</strong>. My expertise spans CRM implementation,
             AI-powered solutions, contact center optimization, and revenue operations.
@@ -294,7 +294,7 @@ export default function HomePage() {
         <ScrollReveal delay={300}>
           <p>
             But technology is only part of the equation. What sets my approach apart is the ability to
-            <strong> translate complex systems into measurable business outcomes</strong>—outcomes like:
+            <strong> translate complex systems into measurable business outcomes</strong> -outcomes like:
           </p>
         </ScrollReveal>
 
@@ -331,8 +331,8 @@ export default function HomePage() {
 
         <ScrollReveal delay={100}>
           <DirectAnswer>
-            Rashan Thompson combines rare operational depth—managing contact centers with 1,500+ team
-            members—with executive-level consulting for C-suite leaders. This dual expertise enables
+            Rashan Thompson combines rare operational depth -managing contact centers with 1,500+ team
+            members -with executive-level consulting for C-suite leaders. This dual expertise enables
             him to design and execute AI-driven transformations that deliver measurable business outcomes.
           </DirectAnswer>
         </ScrollReveal>
@@ -350,9 +350,9 @@ export default function HomePage() {
           <GlassCard className="p-6 mt-8">
             <h3 className="text-xl text-foreground mb-4">This unique blend of operational depth and strategic vision means I understand your challenges at every level:</h3>
             <ul className="space-y-3 text-foreground-muted">
-              <li><strong className="text-foreground">For executives:</strong> I speak your language—P&L responsibility, ROI, competitive positioning</li>
-              <li><strong className="text-foreground">For operations leaders:</strong> I've managed the metrics you manage—NPS, FCR, CSAT, SLA compliance</li>
-              <li><strong className="text-foreground">For technology teams:</strong> I've implemented the platforms you use—Salesforce, Genesys, NICE, Azure, AWS</li>
+              <li><strong className="text-foreground">For executives:</strong> I speak your language -P&L responsibility, ROI, competitive positioning</li>
+              <li><strong className="text-foreground">For operations leaders:</strong> I've managed the metrics you manage -NPS, FCR, CSAT, SLA compliance</li>
+              <li><strong className="text-foreground">For technology teams:</strong> I've implemented the platforms you use -Salesforce, Genesys, NICE, Azure, AWS</li>
             </ul>
           </GlassCard>
         </ScrollReveal>
@@ -360,7 +360,7 @@ export default function HomePage() {
         <ScrollReveal delay={400}>
           <h3 className="text-xl text-foreground mt-12 mb-4">Beyond Consulting: Building AI-Powered Solutions</h3>
           <p>
-            I don't just advise on AI—I build with it. As the creator of{' '}
+            I don't just advise on AI -I build with it. As the creator of{' '}
             <a href={siteConfig.careerPhases} target="_blank" rel="noopener noreferrer" className="text-accent-light hover:text-accent">
               CareerPhases.com
             </a>, I developed an AI-powered career and income intelligence platform that integrates
@@ -457,7 +457,7 @@ export default function HomePage() {
                 </blockquote>
                 <cite className="not-italic">
                   <strong className="text-foreground">{testimonial.name}</strong>
-                  <span className="text-foreground-muted"> — {testimonial.title}</span>
+                  <span className="text-foreground-muted">  - {testimonial.title}</span>
                 </cite>
               </GlassCard>
             </ScrollReveal>
@@ -514,7 +514,7 @@ export default function HomePage() {
                 <p className="text-foreground-muted flex-grow mb-6">
                   An AI-powered career and income intelligence platform created by Rashan Thompson.
                   CareerPhases provides tools and resources for career development, financial literacy,
-                  and workforce readiness—making professional guidance accessible to all.
+                  and workforce readiness -making professional guidance accessible to all.
                 </p>
                 <a
                   href={siteConfig.careerPhases}

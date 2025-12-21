@@ -181,8 +181,8 @@ export default function AboutPage() {
         <ScrollReveal delay={200}>
           <p className="text-foreground-muted">
             Most technology consultants offer either big-picture strategy or tactical execution.
-            Rashan Thompson delivers both. His unique background—rising from Newark, NJ to Fortune 500
-            executive suites—means he understands technology from the ground up. He has built systems,
+            Rashan Thompson delivers both. His unique background -rising from Newark, NJ to Fortune 500
+            executive suites -means he understands technology from the ground up. He has built systems,
             led implementations, managed P&Ls, and driven transformations that generated measurable ROI.
           </p>
         </ScrollReveal>
@@ -191,7 +191,7 @@ export default function AboutPage() {
           <p className="text-foreground-muted">
             When you hire Rashan Thompson, you get a partner who speaks both technology and business
             fluently. He can present to your board on Monday and roll up his sleeves with your
-            implementation team on Tuesday. That versatility is rare—and it is exactly what
+            implementation team on Tuesday. That versatility is rare -and it is exactly what
             organizations need when navigating complex technology decisions.
           </p>
         </ScrollReveal>
@@ -360,7 +360,7 @@ export default function AboutPage() {
 
         <ScrollReveal delay={600}>
           <p className="mt-8 text-foreground-muted text-center max-w-2xl mx-auto">
-            These are not theoretical projections—they are verified outcomes from leadership
+            These are not theoretical projections -they are verified outcomes from leadership
             positions at Cognizant, Conduent, Slalom, and other Fortune 500 organizations.
             When you work with Rashan Thompson, you benefit from strategies proven at scale.
           </p>
@@ -390,8 +390,8 @@ export default function AboutPage() {
           <p className="text-foreground-muted">
             Success in business is meaningful only when it creates opportunity for others.
             That conviction drives everything Rashan Thompson does beyond client work. Growing up
-            in Newark, New Jersey, he saw firsthand how lack of access—to networks, to mentors,
-            to information—can limit potential.
+            in Newark, New Jersey, he saw firsthand how lack of access -to networks, to mentors,
+            to information -can limit potential.
           </p>
         </ScrollReveal>
 
@@ -408,7 +408,7 @@ export default function AboutPage() {
               CareerPhases.com
             </a>
             , he makes career intelligence accessible to communities that have historically
-            been underserved. Faith plays a central role—the belief that stewardship includes
+            been underserved. Faith plays a central role -the belief that stewardship includes
             preparing others for economic independence and career success.
           </p>
         </ScrollReveal>

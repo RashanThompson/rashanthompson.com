@@ -14,6 +14,7 @@ export const siteConfig = {
 };
 
 export const navItems: NavItem[] = [
+  { title: 'Home', href: '/' },
   { title: 'About', href: '/about' },
   { title: 'What I Do', href: '/what-i-do' },
   { title: 'For Business', href: '/for-business' },
@@ -138,7 +139,7 @@ export const faqs: FAQ[] = [
 export const speakingTopics = [
   {
     title: 'AI Readiness: Preparing for What\'s Next',
-    description: 'AI isn\'t coming—it\'s here. This keynote helps audiences understand what AI means for their careers, their organizations, and their communities. Practical, actionable perspectives on thriving in an AI-driven world.',
+    description: 'AI isn\'t coming -it\'s here. This keynote helps audiences understand what AI means for their careers, their organizations, and their communities. Practical, actionable perspectives on thriving in an AI-driven world.',
     audience: 'Corporate conferences, professional associations, educational institutions',
   },
   {

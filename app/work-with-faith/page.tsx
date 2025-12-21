@@ -31,16 +31,16 @@ const offerings = [
     title: 'Youth Career Workshops',
     icon: '🎓',
     description:
-      'Young people in faith communities often hear about character and values—but may not hear about careers and economics. Rashan Thompson delivers workshops that connect faith principles with practical career preparation.',
+      'Young people in faith communities often hear about character and values -but may not hear about careers and economics. Rashan Thompson delivers workshops that connect faith principles with practical career preparation.',
     details:
-      'Youth learn about AI literacy, future career paths, entrepreneurship, and financial fundamentals—all in a context that honors the values their families hold dear.',
+      'Youth learn about AI literacy, future career paths, entrepreneurship, and financial fundamentals -all in a context that honors the values their families hold dear.',
     formats: ['Youth group sessions', 'Vacation Bible school', 'Special events'],
   },
   {
     title: 'Family Financial Wellness',
     icon: '💰',
     description:
-      'Financial stress affects families at every income level. Rashan Thompson offers financial wellness programs that help families understand budgeting, saving, investing, and wealth-building—through a lens of stewardship and responsibility.',
+      'Financial stress affects families at every income level. Rashan Thompson offers financial wellness programs that help families understand budgeting, saving, investing, and wealth-building -through a lens of stewardship and responsibility.',
     details:
       'Programs serve parents, couples, and multi-generational families. Content ranges from basic money management to understanding the changing economy.',
     formats: ['Sunday seminars', 'Multi-week series', 'Family retreats'],
@@ -58,7 +58,7 @@ const offerings = [
     title: 'Career Transition Support',
     icon: '🔄',
     description:
-      'Job loss, industry change, retirement planning—adults face career transitions at every stage. Rashan Thompson provides workshops and support for members navigating these changes.',
+      'Job loss, industry change, retirement planning -adults face career transitions at every stage. Rashan Thompson provides workshops and support for members navigating these changes.',
     details:
       'Content includes understanding the modern job market, leveraging AI tools for job searching, and exploring new career possibilities. Transitions are opportunities.',
     formats: ['Support groups', 'Individual coaching', 'Job club facilitation'],
@@ -121,7 +121,7 @@ export default function WorkWithFaithPage() {
         <ScrollReveal delay={100}>
           <DirectAnswer>
             Houses of worship have always been more than places of spiritual practice. They
-            are community anchors—spaces where families find support, young people find guidance,
+            are community anchors -spaces where families find support, young people find guidance,
             and everyone finds belonging. Today, practical needs include economic preparation,
             and Rashan Thompson can help.
           </DirectAnswer>
@@ -205,7 +205,7 @@ export default function WorkWithFaithPage() {
             </p>
             <p className="text-foreground-muted mb-0">
               It is foundational to who I am and how I approach my work. When I partner with
-              faith communities, I am not just delivering a service—I am participating in the
+              faith communities, I am not just delivering a service -I am participating in the
               same mission of helping people thrive that drives my own church involvement.
             </p>
           </GlassCard>
@@ -313,7 +313,7 @@ export default function WorkWithFaithPage() {
         <ScrollReveal delay={600}>
           <p className="text-foreground-muted mt-8">
             Every engagement begins with conversation about your community&apos;s specific context
-            and goals. Rashan Thompson does not deliver generic content—everything is tailored
+            and goals. Rashan Thompson does not deliver generic content -everything is tailored
             to honor your community&apos;s values and serve your members&apos; real needs.
           </p>
         </ScrollReveal>

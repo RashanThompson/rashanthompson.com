@@ -229,7 +229,7 @@ export default function ForBusinessPage() {
           <p className="text-foreground-muted">
             Most business leaders know they need to leverage AI and modern technology to
             compete. The challenge is finding a partner who understands both the technology
-            and the business implications—someone who can translate complex possibilities
+            and the business implications -someone who can translate complex possibilities
             into practical action plans that deliver ROI.
           </p>
         </ScrollReveal>
@@ -373,7 +373,7 @@ export default function ForBusinessPage() {
               for SMBs and startups.
             </p>
             <p className="text-foreground-muted max-w-xl mx-auto mb-8">
-              The firm brings Fortune 500 methodologies to growing businesses—helping them
+              The firm brings Fortune 500 methodologies to growing businesses -helping them
               achieve enterprise-grade results without enterprise-level budgets.
             </p>
             <a
