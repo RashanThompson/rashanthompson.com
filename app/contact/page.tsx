@@ -7,6 +7,7 @@ import {
   GlassCard,
   MorphingBlob,
   SpotlightCard,
+  CalendlyEmbed,
 } from '@/components/ui';
 import { siteConfig } from '@/data/site';
 
@@ -272,6 +273,33 @@ export default function ContactPage() {
             </ScrollReveal>
           </div>
         </div>
+      </Section>
+
+      {/* Schedule a Call */}
+      <Section className="relative">
+        <MorphingBlob variant="accent" size="md" position="top-right" opacity={0.1} />
+
+        <ScrollReveal>
+          <h2 className="text-center text-foreground">
+            Prefer to <span className="gradient-text">Schedule Directly</span>?
+          </h2>
+        </ScrollReveal>
+
+        <ScrollReveal delay={100}>
+          <p className="text-center text-foreground-muted max-w-2xl mx-auto">
+            Skip the back-and-forth emails. Book a 30-minute introductory call directly
+            on my calendar. Choose a time that works for you.
+          </p>
+        </ScrollReveal>
+
+        <ScrollReveal delay={200}>
+          <GlassCard className="mt-8 p-4 max-w-4xl mx-auto overflow-hidden">
+            <CalendlyEmbed
+              url="https://calendly.com/rashan-thompson/30min?hide_gdpr_banner=1&background_color=0a1628&text_color=f8fafc&primary_color=3b82f6"
+              className="rounded-lg"
+            />
+          </GlassCard>
+        </ScrollReveal>
       </Section>
 
       {/* What to Expect */}

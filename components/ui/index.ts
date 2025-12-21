@@ -9,3 +9,4 @@ export { SpotlightCard } from './SpotlightCard';
 export { TiltCard } from './TiltCard';
 export { MorphingBlob } from './MorphingBlob';
 export { GlassCard } from './GlassCard';
+export { CalendlyEmbed, CalendlyButton } from './CalendlyEmbed';

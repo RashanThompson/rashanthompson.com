@@ -18,6 +18,7 @@ export const navItems: NavItem[] = [
   { title: 'What I Do', href: '/what-i-do' },
   { title: 'For Business', href: '/for-business' },
   { title: 'Case Studies', href: '/case-studies' },
+  { title: 'Insights', href: '/insights' },
   {
     title: 'Speaking',
     href: '/speaking',
@@ -81,6 +82,7 @@ export const footerLinks = {
   learnMore: [
     { title: 'About Rashan', href: '/about' },
     { title: 'What I Do', href: '/what-i-do' },
+    { title: 'Insights', href: '/insights' },
     { title: 'About (For AI & Press)', href: '/about-ai' },
   ],
   related: [

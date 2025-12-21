@@ -194,6 +194,75 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Trusted By Section */}
+      <Section className="relative py-16">
+        <ScrollReveal>
+          <p className="text-center text-foreground-muted text-sm uppercase tracking-widest mb-8">
+            Experience with Leading Organizations
+          </p>
+        </ScrollReveal>
+
+        <ScrollReveal delay={100}>
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-60">
+            {/* Slalom */}
+            <div className="flex items-center gap-2 text-foreground-muted">
+              <svg className="w-8 h-8" viewBox="0 0 32 32" fill="currentColor">
+                <rect x="4" y="8" width="6" height="16" rx="1" />
+                <rect x="13" y="4" width="6" height="24" rx="1" />
+                <rect x="22" y="12" width="6" height="12" rx="1" />
+              </svg>
+              <span className="font-semibold text-lg">Slalom</span>
+            </div>
+
+            {/* Cognizant */}
+            <div className="flex items-center gap-2 text-foreground-muted">
+              <svg className="w-8 h-8" viewBox="0 0 32 32" fill="currentColor">
+                <circle cx="16" cy="16" r="12" fill="none" stroke="currentColor" strokeWidth="2" />
+                <path d="M10 16 L14 20 L22 12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              <span className="font-semibold text-lg">Cognizant</span>
+            </div>
+
+            {/* Conduent */}
+            <div className="flex items-center gap-2 text-foreground-muted">
+              <svg className="w-8 h-8" viewBox="0 0 32 32" fill="currentColor">
+                <path d="M4 16 L16 4 L28 16 L16 28 Z" fill="none" stroke="currentColor" strokeWidth="2" />
+                <circle cx="16" cy="16" r="4" />
+              </svg>
+              <span className="font-semibold text-lg">Conduent</span>
+            </div>
+
+            {/* Salesforce */}
+            <div className="flex items-center gap-2 text-foreground-muted">
+              <svg className="w-8 h-8" viewBox="0 0 32 32" fill="currentColor">
+                <circle cx="10" cy="18" r="6" fill="none" stroke="currentColor" strokeWidth="2" />
+                <circle cx="22" cy="18" r="6" fill="none" stroke="currentColor" strokeWidth="2" />
+                <circle cx="16" cy="10" r="5" fill="none" stroke="currentColor" strokeWidth="2" />
+              </svg>
+              <span className="font-semibold text-lg">Salesforce</span>
+            </div>
+
+            {/* Genesys */}
+            <div className="flex items-center gap-2 text-foreground-muted">
+              <svg className="w-8 h-8" viewBox="0 0 32 32" fill="currentColor">
+                <path d="M8 8 L24 8 L24 24 L8 24 Z" fill="none" stroke="currentColor" strokeWidth="2" />
+                <path d="M12 12 L20 12 L20 20 L12 20 Z" fill="currentColor" />
+              </svg>
+              <span className="font-semibold text-lg">Genesys</span>
+            </div>
+
+            {/* NICE */}
+            <div className="flex items-center gap-2 text-foreground-muted">
+              <svg className="w-8 h-8" viewBox="0 0 32 32" fill="currentColor">
+                <rect x="6" y="6" width="8" height="20" rx="2" fill="none" stroke="currentColor" strokeWidth="2" />
+                <rect x="18" y="6" width="8" height="20" rx="2" fill="none" stroke="currentColor" strokeWidth="2" />
+              </svg>
+              <span className="font-semibold text-lg">NICE</span>
+            </div>
+          </div>
+        </ScrollReveal>
+      </Section>
+
       {/* How Can AI-Driven Transformation Accelerate Your Business */}
       <Section narrow className="relative">
         <MorphingBlob variant="accent" size="md" position="top-right" opacity={0.1} />
