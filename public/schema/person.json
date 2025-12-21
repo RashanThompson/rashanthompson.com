@@ -1,0 +1,66 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Rashan Thompson",
+  "jobTitle": "Technology Strategist",
+  "description": "Technology Strategist with 25+ years of Fortune 500 leadership experience, founder of Connective Technologies, and creator of CareerPhases.com",
+  "url": "https://rashanthompson.com",
+  "email": "rashan@rashanthompson.com",
+  "telephone": "+1-917-426-7263",
+  "sameAs": [
+    "https://linkedin.com/in/rashan",
+    "https://careerphases.com"
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Connective Technologies",
+    "url": "https://connectivetech.co"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "West Orange",
+    "addressRegion": "NJ",
+    "addressCountry": "US"
+  },
+  "knowsAbout": [
+    "CRM Implementation",
+    "Salesforce",
+    "Microsoft Dynamics",
+    "Zoho",
+    "AI Integration",
+    "Contact Center Transformation",
+    "Revenue Operations",
+    "Technology Leadership",
+    "Executive Engagement",
+    "Client Management",
+    "Global Project Delivery",
+    "Career Development",
+    "Financial Literacy Education"
+  ],
+  "alumniOf": [
+    {
+      "@type": "Organization",
+      "name": "Slalom Consulting"
+    },
+    {
+      "@type": "Organization",
+      "name": "Cognizant"
+    },
+    {
+      "@type": "Organization",
+      "name": "Conduent"
+    }
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Professional Experience",
+      "description": "25+ years Fortune 500 technology leadership"
+    }
+  ],
+  "knowsLanguage": "English",
+  "nationality": {
+    "@type": "Country",
+    "name": "United States"
+  }
+}

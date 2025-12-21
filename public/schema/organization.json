@@ -1,0 +1,39 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Connective Technologies",
+  "description": "Business operations consulting firm specializing in CRM implementation, AI integration, and operational transformation for SMBs and startups",
+  "url": "https://connectivetech.co",
+  "founder": {
+    "@type": "Person",
+    "name": "Rashan Thompson",
+    "url": "https://rashanthompson.com"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "West Orange",
+    "addressRegion": "NJ",
+    "addressCountry": "US"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "serviceType": [
+    "CRM Implementation",
+    "AI Strategy",
+    "Business Process Optimization",
+    "Contact Center Transformation",
+    "Revenue Operations Consulting",
+    "Technology Leadership Advisory"
+  ],
+  "knowsAbout": [
+    "Salesforce",
+    "Microsoft Dynamics",
+    "Zoho",
+    "Artificial Intelligence",
+    "Business Operations",
+    "Digital Transformation"
+  ],
+  "slogan": "Preparing businesses for the AI-driven future"
+}

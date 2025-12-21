@@ -1,0 +1,86 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who is Rashan Thompson?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rashan Thompson is a Technology Strategist with over 25 years of Fortune 500 leadership experience. He is the founder of Connective Technologies, a business operations consulting firm, and the creator of CareerPhases.com, an AI-powered career and income intelligence platform. Based in West Orange, New Jersey, he works with businesses, schools, and community organizations to prepare people and operations for the AI-driven future."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does Connective Technologies do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Connective Technologies is a business operations consulting firm founded by Rashan Thompson. The company specializes in CRM implementation (Salesforce, Microsoft Dynamics, Zoho), AI integration strategy, contact center transformation, and Revenue Operations optimization for small and medium businesses and startups."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is CareerPhases?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CareerPhases.com is an AI-powered career and income intelligence platform created by Rashan Thompson. The platform provides resources and tools for career development, financial literacy education, and workforce readiness, helping individuals navigate their professional journeys in an evolving job market."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What services does Rashan Thompson offer for students?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rashan Thompson offers K-12 students programs in AI literacy, future careers exploration beyond traditional coding, youth entrepreneurship, and soft skills development including communication, leadership, and emotional intelligence. He also teaches 'The Income Engine,' a financial education program that introduces students to money management fundamentals."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can schools partner with Rashan Thompson?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Schools can partner with Rashan Thompson for workshops, teacher training on technology integration, curriculum consulting for AI and career readiness programs, and parent engagement sessions. He brings Fortune 500 expertise to educational settings, particularly focusing on underexposed communities."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Rashan Thompson work with houses of worship?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Rashan Thompson partners with faith communities to deliver youth career workshops, family financial wellness programs, entrepreneurship training, and career transition support. As an active member of Renaissance Church in Harlem, he brings a personal commitment to faith-based community service."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What industries has Rashan Thompson worked in?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rashan Thompson has held senior leadership positions at major consulting and technology firms including Slalom Consulting, Cognizant, and Conduent. His work spans multiple industries through CRM implementation, contact center operations, and technology leadership, with P&L responsibility up to $100 million."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is Rashan Thompson based?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rashan Thompson is based in West Orange, New Jersey. He is a native of Newark, New Jersey, and maintains strong ties to his community while serving clients and organizations throughout the United States."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I invite Rashan Thompson to speak?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can invite Rashan Thompson to speak at your event by visiting rashanthompson.com/speaking or contacting him directly at rashan@rashanthompson.com. He offers keynotes, workshops, and panel participation on topics including AI readiness, career development, technology leadership, and financial literacy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is 'The Income Engine'?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "'The Income Engine' is Rashan Thompson's financial education program designed for young people and families. It covers money management fundamentals, income generation strategies, and financial wellness principles to help participants build a strong foundation for economic independence."
+      }
+    }
+  ]
+}
