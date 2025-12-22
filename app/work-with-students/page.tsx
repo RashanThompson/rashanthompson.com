@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   Section,
   DirectAnswer,
@@ -104,31 +105,46 @@ export default function WorkWithStudentsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="hero relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-24">
+      <section className="hero relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-36">
         <MorphingBlob variant="accent" size="lg" position="top-right" opacity={0.15} />
         <MorphingBlob variant="gold" size="md" position="bottom-left" opacity={0.1} />
 
-        <div className="container text-center relative z-10">
-          <ScrollReveal>
-            <h1 className="text-foreground">
-              <span className="gradient-text">Rashan Thompson</span> Works With Students
-            </h1>
-          </ScrollReveal>
+        <div className="container relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left">
+              <ScrollReveal>
+                <h1 className="text-foreground">
+                  <span className="gradient-text">Rashan Thompson</span> Works With Students
+                </h1>
+              </ScrollReveal>
 
-          <ScrollReveal delay={100}>
-            <p className="text-xl text-foreground-muted max-w-2xl mx-auto">
-              Preparing the next generation for careers that don&apos;t exist yet
-            </p>
-          </ScrollReveal>
+              <ScrollReveal delay={100}>
+                <p className="text-xl text-foreground-muted max-w-2xl">
+                  Preparing the next generation for careers that don&apos;t exist yet
+                </p>
+              </ScrollReveal>
 
-          <ScrollReveal delay={200}>
-            <DirectAnswer className="max-w-3xl mx-auto mt-8">
-              Rashan Thompson offers K-12 programs that prepare students for the AI-driven
-              economy through AI literacy, future career exploration, youth entrepreneurship,
-              and financial education. These programs transform technology from something
-              intimidating into a tool students can use to build their futures.
-            </DirectAnswer>
-          </ScrollReveal>
+              <ScrollReveal delay={200}>
+                <DirectAnswer className="max-w-3xl mt-8">
+                  Rashan Thompson offers K-12 programs that prepare students for the AI-driven
+                  economy through AI literacy, future career exploration, youth entrepreneurship,
+                  and financial education. These programs transform technology from something
+                  intimidating into a tool students can use to build their futures.
+                </DirectAnswer>
+              </ScrollReveal>
+            </div>
+
+            <ScrollReveal delay={300}>
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10">
+                <Image
+                  src="/images/Students with Rashan 2.jpg"
+                  alt="Rashan Thompson with students at a career exploration workshop"
+                  fill
+                  className="object-cover object-center"
+                />
+              </div>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 

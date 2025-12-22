@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   Section,
   DirectAnswer,
@@ -97,31 +98,46 @@ export default function WorkWithSchoolsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="hero relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-24">
+      <section className="hero relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-36">
         <MorphingBlob variant="accent" size="lg" position="top-right" opacity={0.15} />
         <MorphingBlob variant="primary" size="md" position="bottom-left" opacity={0.1} />
 
-        <div className="container text-center relative z-10">
-          <ScrollReveal>
-            <h1 className="text-foreground">
-              <span className="gradient-text">Rashan Thompson</span> Works With Schools
-            </h1>
-          </ScrollReveal>
+        <div className="container relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left">
+              <ScrollReveal>
+                <h1 className="text-foreground">
+                  <span className="gradient-text">Rashan Thompson</span> Works With Schools
+                </h1>
+              </ScrollReveal>
 
-          <ScrollReveal delay={100}>
-            <p className="text-xl text-foreground-muted max-w-2xl mx-auto">
-              Enterprise-grade AI and career strategy for the classroom
-            </p>
-          </ScrollReveal>
+              <ScrollReveal delay={100}>
+                <p className="text-xl text-foreground-muted max-w-2xl">
+                  Enterprise-grade AI and career strategy for the classroom
+                </p>
+              </ScrollReveal>
 
-          <ScrollReveal delay={200}>
-            <DirectAnswer className="max-w-3xl mx-auto mt-8">
-              Rashan Thompson brings Fortune 500 technology expertise into educational settings
-              through curriculum consulting, teacher training, student workshops, and parent
-              engagement programs. Schools receive enterprise-grade strategy adapted for their
-              unique context and student population.
-            </DirectAnswer>
-          </ScrollReveal>
+              <ScrollReveal delay={200}>
+                <DirectAnswer className="max-w-3xl mt-8">
+                  Rashan Thompson brings Fortune 500 technology expertise into educational settings
+                  through curriculum consulting, teacher training, student workshops, and parent
+                  engagement programs. Schools receive enterprise-grade strategy adapted for their
+                  unique context and student population.
+                </DirectAnswer>
+              </ScrollReveal>
+            </div>
+
+            <ScrollReveal delay={300}>
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10">
+                <Image
+                  src="/images/Rashan Thompson College.png"
+                  alt="Rashan Thompson speaking at a college or school event"
+                  fill
+                  className="object-cover object-top"
+                />
+              </div>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 

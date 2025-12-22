@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#0a1628"/>
+  <rect x="50" y="50" width="700" height="400" rx="8" fill="#111d32" stroke="#1e3a5f" stroke-width="2"/>
+
+  <!-- Whiteboard -->
+  <rect x="250" y="100" width="300" height="180" fill="#1e3a5f" rx="4"/>
+  <rect x="260" y="110" width="280" height="160" fill="#0f172a" rx="2"/>
+
+  <!-- Career path diagram on whiteboard -->
+  <line x1="280" y1="200" x2="520" y2="200" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="300" cy="200" r="8" fill="#2563eb"/>
+  <circle cx="380" cy="200" r="8" fill="#2563eb"/>
+  <circle cx="460" cy="200" r="8" fill="#2563eb"/>
+  <path d="M380 180 L380 160 L420 160" stroke="#d4a853" stroke-width="2" fill="none"/>
+  <circle cx="420" cy="160" r="6" fill="#d4a853"/>
+
+  <!-- Presenter silhouette -->
+  <circle cx="180" cy="200" r="30" fill="#374151"/>
+  <path d="M140 300 Q140 250 180 250 Q220 250 220 300 L220 350 L140 350 Z" fill="#374151"/>
+
+  <!-- Attendees -->
+  <circle cx="350" cy="350" r="20" fill="#374151" opacity="0.7"/>
+  <circle cx="420" cy="370" r="20" fill="#374151" opacity="0.7"/>
+  <circle cx="490" cy="350" r="20" fill="#374151" opacity="0.7"/>
+  <circle cx="560" cy="370" r="20" fill="#374151" opacity="0.7"/>
+  <circle cx="630" cy="350" r="20" fill="#374151" opacity="0.7"/>
+
+  <!-- Placeholder text -->
+  <text x="400" y="470" text-anchor="middle" fill="#6b7280" font-family="system-ui" font-size="14">Career Development Workshop</text>
+</svg>

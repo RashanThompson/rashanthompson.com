@@ -27,6 +27,7 @@ export const navItems: NavItem[] = [
       { title: 'Work with Students', href: '/work-with-students' },
       { title: 'Work with Schools', href: '/work-with-schools' },
       { title: 'Work with Faith', href: '/work-with-faith' },
+      { title: 'Work with Nonprofits', href: '/work-with-nonprofits' },
     ],
   },
   { title: 'Work With Rashan', href: '/contact', isButton: true },
@@ -79,6 +80,7 @@ export const footerLinks = {
     { title: 'Students', href: '/work-with-students' },
     { title: 'Schools', href: '/work-with-schools' },
     { title: 'Faith Communities', href: '/work-with-faith' },
+    { title: 'Nonprofits', href: '/work-with-nonprofits' },
   ],
   learnMore: [
     { title: 'About Rashan', href: '/about' },

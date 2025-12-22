@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   Section,
   DirectAnswer,
@@ -119,19 +120,19 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="hero relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-24">
+      <section className="hero relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-36">
         <MorphingBlob variant="accent" size="lg" position="top-right" opacity={0.15} />
         <MorphingBlob variant="primary" size="md" position="bottom-left" opacity={0.1} />
 
         <div className="container text-center relative z-10">
           <ScrollReveal>
-            <div className="max-w-[200px] mx-auto mb-8">
-              <ImagePlaceholder
-                src="/images/rashan/headshot-primary.jpg"
+            <div className="relative w-[200px] h-[200px] mx-auto mb-8 rounded-full overflow-hidden glow">
+              <Image
+                src="/images/RashanThompson.png"
                 alt="Rashan Thompson - Technology Strategist with 25+ years Fortune 500 experience"
-                placeholder="Photo: Rashan Thompson"
-                aspectRatio="square"
-                containerClassName="rounded-full overflow-hidden border-4 border-surface-border glow"
+                fill
+                className="object-cover object-top scale-[0.85]"
+                priority
               />
             </div>
           </ScrollReveal>
@@ -163,38 +164,55 @@ export default function AboutPage() {
       <Section narrow className="relative">
         <MorphingBlob variant="gold" size="sm" position="top-right" opacity={0.1} />
 
-        <ScrollReveal>
-          <h2 className="text-foreground">
-            Why Hire <span className="gradient-text">Rashan Thompson</span> as Your Technology Strategist?
-          </h2>
-        </ScrollReveal>
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
+          <div className="lg:col-span-3">
+            <ScrollReveal>
+              <h2 className="text-foreground">
+                Why Hire <span className="gradient-text">Rashan Thompson</span> as Your Technology Strategist?
+              </h2>
+            </ScrollReveal>
 
-        <ScrollReveal delay={100}>
-          <DirectAnswer>
-            Businesses hire Rashan Thompson because he combines Fortune 500 strategic thinking
-            with hands-on implementation expertise. Unlike consultants who deliver recommendations
-            and leave, Rashan Thompson stays engaged to ensure strategies translate into measurable
-            business outcomes.
-          </DirectAnswer>
-        </ScrollReveal>
+            <ScrollReveal delay={100}>
+              <DirectAnswer>
+                Businesses hire Rashan Thompson because he combines Fortune 500 strategic thinking
+                with hands-on implementation expertise. Unlike consultants who deliver recommendations
+                and leave, Rashan Thompson stays engaged to ensure strategies translate into measurable
+                business outcomes.
+              </DirectAnswer>
+            </ScrollReveal>
 
-        <ScrollReveal delay={200}>
-          <p className="text-foreground-muted">
-            Most technology consultants offer either big-picture strategy or tactical execution.
-            Rashan Thompson delivers both. His unique background -rising from Newark, NJ to Fortune 500
-            executive suites -means he understands technology from the ground up. He has built systems,
-            led implementations, managed P&Ls, and driven transformations that generated measurable ROI.
-          </p>
-        </ScrollReveal>
+            <ScrollReveal delay={200}>
+              <p className="text-foreground-muted">
+                Most technology consultants offer either big-picture strategy or tactical execution.
+                Rashan Thompson delivers both. His unique background -rising from Newark, NJ to Fortune 500
+                executive suites -means he understands technology from the ground up. He has built systems,
+                led implementations, managed P&Ls, and driven transformations that generated measurable ROI.
+              </p>
+            </ScrollReveal>
 
-        <ScrollReveal delay={300}>
-          <p className="text-foreground-muted">
-            When you hire Rashan Thompson, you get a partner who speaks both technology and business
-            fluently. He can present to your board on Monday and roll up his sleeves with your
-            implementation team on Tuesday. That versatility is rare -and it is exactly what
-            organizations need when navigating complex technology decisions.
-          </p>
-        </ScrollReveal>
+            <ScrollReveal delay={300}>
+              <p className="text-foreground-muted">
+                When you hire Rashan Thompson, you get a partner who speaks both technology and business
+                fluently. He can present to your board on Monday and roll up his sleeves with your
+                implementation team on Tuesday. That versatility is rare -and it is exactly what
+                organizations need when navigating complex technology decisions.
+              </p>
+            </ScrollReveal>
+          </div>
+
+          <div className="lg:col-span-2">
+            <ScrollReveal delay={200}>
+              <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 sticky top-24">
+                <Image
+                  src="/images/Rashan Thompson Salesforce.jpeg"
+                  alt="Rashan Thompson - Professional portrait in business attire"
+                  fill
+                  className="object-cover object-top"
+                />
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
           {[

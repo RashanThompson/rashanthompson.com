@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#0a1628"/>
+  <rect x="50" y="50" width="700" height="400" rx="8" fill="#111d32" stroke="#1e3a5f" stroke-width="2"/>
+
+  <!-- Community circle of people -->
+  <circle cx="400" cy="250" r="120" fill="none" stroke="#1e3a5f" stroke-width="2" stroke-dasharray="10,5"/>
+
+  <!-- People silhouettes arranged in circle -->
+  <g transform="translate(400, 250)">
+    <circle cx="0" cy="-100" r="20" fill="#374151"/>
+    <circle cx="87" cy="-50" r="20" fill="#374151"/>
+    <circle cx="87" cy="50" r="20" fill="#374151"/>
+    <circle cx="0" cy="100" r="20" fill="#374151"/>
+    <circle cx="-87" cy="50" r="20" fill="#374151"/>
+    <circle cx="-87" cy="-50" r="20" fill="#374151"/>
+  </g>
+
+  <!-- Heart in center -->
+  <path d="M400 220 C380 200 350 210 350 240 C350 270 400 300 400 300 C400 300 450 270 450 240 C450 210 420 200 400 220" fill="#2563eb" opacity="0.8"/>
+
+  <!-- Hands reaching -->
+  <path d="M200 350 Q250 300 300 320" fill="none" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+  <path d="M600 350 Q550 300 500 320" fill="none" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Placeholder text -->
+  <text x="400" y="470" text-anchor="middle" fill="#6b7280" font-family="system-ui" font-size="14">Nonprofit Community Workshop</text>
+</svg>

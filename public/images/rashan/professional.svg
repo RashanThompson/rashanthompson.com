@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" fill="none">
+  <rect width="600" height="600" fill="#0a1628"/>
+  <rect x="50" y="50" width="500" height="500" rx="8" fill="#111d32" stroke="#1e3a5f" stroke-width="2"/>
+
+  <!-- Professional headshot silhouette -->
+  <circle cx="300" cy="220" r="80" fill="#374151"/>
+  <path d="M180 420 Q180 320 300 320 Q420 320 420 420 L420 500 L180 500 Z" fill="#374151"/>
+
+  <!-- Suit collar details -->
+  <path d="M240 380 L300 440 L360 380" fill="none" stroke="#1e3a5f" stroke-width="3"/>
+  <rect x="290" y="360" width="20" height="60" fill="#2563eb"/>
+
+  <!-- Placeholder text -->
+  <text x="300" y="540" text-anchor="middle" fill="#6b7280" font-family="system-ui" font-size="14">Professional Headshot</text>
+</svg>

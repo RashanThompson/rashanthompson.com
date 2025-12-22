@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#0a1628"/>
+  <rect x="50" y="50" width="700" height="400" rx="8" fill="#111d32" stroke="#1e3a5f" stroke-width="2"/>
+
+  <!-- Growth chart -->
+  <g transform="translate(200, 100)">
+    <line x1="0" y1="250" x2="400" y2="250" stroke="#1e3a5f" stroke-width="2"/>
+    <line x1="0" y1="0" x2="0" y2="250" stroke="#1e3a5f" stroke-width="2"/>
+
+    <!-- Bar chart -->
+    <rect x="40" y="180" width="50" height="70" fill="#2563eb" opacity="0.6"/>
+    <rect x="120" y="140" width="50" height="110" fill="#2563eb" opacity="0.7"/>
+    <rect x="200" y="90" width="50" height="160" fill="#2563eb" opacity="0.8"/>
+    <rect x="280" y="40" width="50" height="210" fill="#2563eb"/>
+
+    <!-- Growth line -->
+    <path d="M65 180 L145 140 L225 90 L305 40" stroke="#d4a853" stroke-width="3" fill="none"/>
+    <circle cx="65" cy="180" r="6" fill="#d4a853"/>
+    <circle cx="145" cy="140" r="6" fill="#d4a853"/>
+    <circle cx="225" cy="90" r="6" fill="#d4a853"/>
+    <circle cx="305" cy="40" r="6" fill="#d4a853"/>
+  </g>
+
+  <!-- Dollar sign -->
+  <circle cx="680" cy="120" r="40" fill="#d4a853" opacity="0.2"/>
+  <text x="680" y="135" text-anchor="middle" fill="#d4a853" font-family="system-ui" font-size="40" font-weight="bold">$</text>
+
+  <!-- Coins stack -->
+  <ellipse cx="150" cy="380" rx="40" ry="15" fill="#d4a853" opacity="0.3"/>
+  <ellipse cx="150" cy="370" rx="40" ry="15" fill="#d4a853" opacity="0.5"/>
+  <ellipse cx="150" cy="360" rx="40" ry="15" fill="#d4a853" opacity="0.7"/>
+  <ellipse cx="150" cy="350" rx="40" ry="15" fill="#d4a853"/>
+
+  <!-- Placeholder text -->
+  <text x="400" y="470" text-anchor="middle" fill="#6b7280" font-family="system-ui" font-size="14">Financial Literacy & Income Growth</text>
+</svg>

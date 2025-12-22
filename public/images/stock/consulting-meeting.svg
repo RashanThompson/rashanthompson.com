@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#0a1628"/>
+  <rect x="50" y="50" width="700" height="400" rx="8" fill="#111d32" stroke="#1e3a5f" stroke-width="2"/>
+
+  <!-- Conference table -->
+  <ellipse cx="400" cy="300" rx="250" ry="80" fill="#1e3a5f"/>
+  <ellipse cx="400" cy="290" rx="250" ry="80" fill="#162539"/>
+
+  <!-- People around table -->
+  <g>
+    <!-- Person 1 - left -->
+    <circle cx="180" cy="240" r="25" fill="#374151"/>
+    <!-- Person 2 - top left -->
+    <circle cx="280" cy="180" r="25" fill="#374151"/>
+    <!-- Person 3 - top center (presenter) -->
+    <circle cx="400" cy="160" r="30" fill="#2563eb"/>
+    <!-- Person 4 - top right -->
+    <circle cx="520" cy="180" r="25" fill="#374151"/>
+    <!-- Person 5 - right -->
+    <circle cx="620" cy="240" r="25" fill="#374151"/>
+  </g>
+
+  <!-- Laptop screens on table -->
+  <rect x="220" y="270" width="40" height="25" fill="#0f172a" rx="2"/>
+  <rect x="370" y="260" width="60" height="35" fill="#0f172a" rx="2"/>
+  <rect x="540" y="270" width="40" height="25" fill="#0f172a" rx="2"/>
+
+  <!-- Screen glow -->
+  <rect x="375" y="265" width="50" height="25" fill="#2563eb" opacity="0.3" rx="1"/>
+
+  <!-- Documents -->
+  <rect x="300" y="285" width="30" height="20" fill="white" opacity="0.3" rx="1"/>
+  <rect x="470" y="285" width="30" height="20" fill="white" opacity="0.3" rx="1"/>
+
+  <!-- Placeholder text -->
+  <text x="400" y="470" text-anchor="middle" fill="#6b7280" font-family="system-ui" font-size="14">Business Strategy Consultation</text>
+</svg>

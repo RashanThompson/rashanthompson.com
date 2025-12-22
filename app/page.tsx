@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   Section,
   DirectAnswer,
@@ -129,59 +130,76 @@ export default function HomePage() {
       />
 
       {/* Hero Section */}
-      <section className="hero relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      <section className="hero relative min-h-screen flex items-center justify-center overflow-hidden pt-36">
         <MorphingBlob variant="accent" size="xl" position="top-right" opacity={0.2} />
         <MorphingBlob variant="primary" size="lg" position="bottom-left" opacity={0.15} />
         <MorphingBlob variant="gold" size="md" position="center" opacity={0.1} blur={80} />
 
-        <div className="container text-center relative z-10">
-          <ScrollReveal variant="fadeUp" delay={100}>
-            <p className="text-accent-light text-sm uppercase tracking-widest mb-4 font-medium">
-              Technology Strategist & AI Integration Expert
-            </p>
-          </ScrollReveal>
+        <div className="container relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left">
+              <ScrollReveal variant="fadeUp" delay={100}>
+                <p className="text-accent-light text-sm uppercase tracking-widest mb-4 font-medium">
+                  Technology Strategist & AI Integration Expert
+                </p>
+              </ScrollReveal>
 
-          <ScrollReveal variant="fadeUp" delay={200}>
-            <h1 className="text-balance text-foreground">
-              Accelerate Growth Through{' '}
-              <span className="gradient-text">AI-Driven Business Transformation</span>
-            </h1>
-          </ScrollReveal>
+              <ScrollReveal variant="fadeUp" delay={200}>
+                <h1 className="text-balance text-foreground">
+                  Accelerate Growth Through{' '}
+                  <span className="gradient-text">AI-Driven Business Transformation</span>
+                </h1>
+              </ScrollReveal>
 
-          <ScrollReveal variant="fadeUp" delay={300}>
-            <p className="hero-subtitle">
-              By 2030, AI will displace 85 million jobs while creating 97 million new roles.
-              The question isn't whether AI will reshape your industry -it's whether you'll lead the change or follow it.
-            </p>
-          </ScrollReveal>
+              <ScrollReveal variant="fadeUp" delay={300}>
+                <p className="hero-subtitle">
+                  By 2030, AI will displace 85 million jobs while creating 97 million new roles.
+                  The question isn&apos;t whether AI will reshape your industry - it&apos;s whether you&apos;ll lead the change or follow it.
+                </p>
+              </ScrollReveal>
 
-          <ScrollReveal variant="fadeUp" delay={400}>
-            <DirectAnswer>
-              Rashan Thompson is a Technology Strategist and AI Integration Expert with over 25 years
-              of Fortune 500 leadership experience. He has managed global teams of 1,500+ members,
-              directed $100M+ contracts, and delivered transformative results including 40% NPS
-              improvements, 35% revenue growth, and 97/100 customer satisfaction scores.
-            </DirectAnswer>
-          </ScrollReveal>
+              <ScrollReveal variant="fadeUp" delay={400}>
+                <DirectAnswer>
+                  Rashan Thompson is a Technology Strategist and AI Integration Expert with over 25 years
+                  of Fortune 500 leadership experience. He has managed global teams of 1,500+ members,
+                  directed $100M+ contracts, and delivered transformative results including 40% NPS
+                  improvements, 35% revenue growth, and 97/100 customer satisfaction scores.
+                </DirectAnswer>
+              </ScrollReveal>
 
-          <ScrollReveal variant="fadeUp" delay={500}>
+              <ScrollReveal variant="fadeUp" delay={500}>
+                <div className="flex gap-4 justify-center lg:justify-start flex-wrap mt-8">
+                  <Link href="/contact" className="btn btn-primary">
+                    Work With Rashan
+                  </Link>
+                  <Link href="/about" className="btn btn-secondary">
+                    Discover My Approach
+                  </Link>
+                </div>
+              </ScrollReveal>
+            </div>
+
+            <ScrollReveal variant="fadeUp" delay={300}>
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+                <Image
+                  src="/images/rashan/panel-speaking.jpg"
+                  alt="Rashan Thompson speaking on a panel discussion about technology and business transformation"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
+              </div>
+            </ScrollReveal>
+          </div>
+
+          <ScrollReveal variant="fadeUp" delay={600}>
             <div className="flex justify-center gap-8 md:gap-12 flex-wrap my-12">
               {heroMetrics.map((metric, index) => (
                 <div key={metric.label} className="float" style={{ animationDelay: `${index * -2}s` }}>
                   <Metric value={metric.value} label={metric.label} />
                 </div>
               ))}
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal variant="fadeUp" delay={600}>
-            <div className="flex gap-4 justify-center flex-wrap">
-              <Link href="/contact" className="btn btn-primary">
-                Work With Rashan
-              </Link>
-              <Link href="/about" className="btn btn-secondary">
-                Discover My Approach
-              </Link>
             </div>
           </ScrollReveal>
         </div>
@@ -267,20 +285,35 @@ export default function HomePage() {
       <Section narrow className="relative">
         <MorphingBlob variant="accent" size="md" position="top-right" opacity={0.1} />
 
-        <ScrollReveal>
-          <h2 className="text-foreground">
-            How Can <span className="gradient-text">AI-Driven Transformation</span> Accelerate Your Business?
-          </h2>
-        </ScrollReveal>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <ScrollReveal>
+              <h2 className="text-foreground">
+                How Can <span className="gradient-text">AI-Driven Transformation</span> Accelerate Your Business?
+              </h2>
+            </ScrollReveal>
 
-        <ScrollReveal delay={100}>
-          <DirectAnswer>
-            AI-driven business transformation combines strategic leadership, advanced technology
-            integration, and operational excellence to deliver measurable results. Rashan Thompson
-            specializes in implementing Salesforce CRM, AI-powered automation, and contact center
-            optimization that reduces costs, improves customer satisfaction, and accelerates revenue growth.
-          </DirectAnswer>
-        </ScrollReveal>
+            <ScrollReveal delay={100}>
+              <DirectAnswer>
+                AI-driven business transformation combines strategic leadership, advanced technology
+                integration, and operational excellence to deliver measurable results. Rashan Thompson
+                specializes in implementing Salesforce CRM, AI-powered automation, and contact center
+                optimization that reduces costs, improves customer satisfaction, and accelerates revenue growth.
+              </DirectAnswer>
+            </ScrollReveal>
+          </div>
+
+          <ScrollReveal delay={200}>
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10">
+              <Image
+                src="/images/AI-by-Rashan-Thompson-web.jpg"
+                alt="AI-Driven Business Transformation visualization"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </ScrollReveal>
+        </div>
 
         <ScrollReveal delay={200}>
           <p>

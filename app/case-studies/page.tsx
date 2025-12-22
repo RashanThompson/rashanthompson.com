@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   Section,
   DirectAnswer,
@@ -128,7 +129,7 @@ export default function CaseStudiesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="hero relative min-h-[50vh] flex items-center justify-center overflow-hidden pt-24">
+      <section className="hero relative min-h-[50vh] flex items-center justify-center overflow-hidden pt-36">
         <MorphingBlob variant="accent" size="lg" position="top-right" opacity={0.15} />
         <MorphingBlob variant="gold" size="md" position="bottom-left" opacity={0.1} />
 
@@ -159,19 +160,34 @@ export default function CaseStudiesPage() {
       <Section className="relative">
         <MorphingBlob variant="primary" size="md" position="top-left" opacity={0.1} />
 
-        <ScrollReveal>
-          <h2 className="text-center text-foreground">
-            What Results Can <span className="gradient-text">You Expect</span>?
-          </h2>
-        </ScrollReveal>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
+          <div>
+            <ScrollReveal>
+              <h2 className="text-foreground">
+                What Results Can <span className="gradient-text">You Expect</span>?
+              </h2>
+            </ScrollReveal>
 
-        <ScrollReveal delay={100}>
-          <DirectAnswer>
-            Organizations working with Rashan Thompson consistently achieve significant improvements:
-            40%+ NPS gains, 25-35% cost reductions, and revenue growth that exceeds industry benchmarks.
-            These outcomes come from proven methodologies refined across 25+ years of Fortune 500 experience.
-          </DirectAnswer>
-        </ScrollReveal>
+            <ScrollReveal delay={100}>
+              <DirectAnswer>
+                Organizations working with Rashan Thompson consistently achieve significant improvements:
+                40%+ NPS gains, 25-35% cost reductions, and revenue growth that exceeds industry benchmarks.
+                These outcomes come from proven methodologies refined across 25+ years of Fortune 500 experience.
+              </DirectAnswer>
+            </ScrollReveal>
+          </div>
+
+          <ScrollReveal delay={200}>
+            <div className="relative aspect-[16/10] rounded-2xl overflow-hidden border border-white/10">
+              <Image
+                src="/images/stock/case-study-results.svg"
+                alt="Case study results dashboard showing revenue growth, customer satisfaction, and efficiency metrics"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </ScrollReveal>
+        </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
           {[

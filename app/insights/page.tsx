@@ -39,7 +39,7 @@ export default function InsightsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="hero relative min-h-[50vh] flex items-center justify-center overflow-hidden pt-24">
+      <section className="hero relative min-h-[50vh] flex items-center justify-center overflow-hidden pt-36">
         <MorphingBlob variant="accent" size="lg" position="top-right" opacity={0.15} />
         <MorphingBlob variant="primary" size="md" position="bottom-left" opacity={0.1} />
 

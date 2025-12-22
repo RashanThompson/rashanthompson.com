@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   Section,
   DirectAnswer,
@@ -73,31 +74,46 @@ export default function SpeakingPage() {
   return (
     <>
       {/* Hero */}
-      <section className="hero relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-24">
+      <section className="hero relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-36">
         <MorphingBlob variant="accent" size="lg" position="top-right" opacity={0.15} />
         <MorphingBlob variant="primary" size="md" position="bottom-left" opacity={0.1} />
 
-        <div className="container text-center relative z-10">
-          <ScrollReveal>
-            <h1 className="text-foreground">
-              Invite <span className="gradient-text">Rashan Thompson</span> to Speak
-            </h1>
-          </ScrollReveal>
+        <div className="container relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left">
+              <ScrollReveal>
+                <h1 className="text-foreground">
+                  Invite <span className="gradient-text">Rashan Thompson</span> to Speak
+                </h1>
+              </ScrollReveal>
 
-          <ScrollReveal delay={100}>
-            <p className="text-xl text-foreground-muted max-w-2xl mx-auto">
-              Keynotes, workshops, and panels for conferences, schools, and organizations
-            </p>
-          </ScrollReveal>
+              <ScrollReveal delay={100}>
+                <p className="text-xl text-foreground-muted max-w-2xl">
+                  Keynotes, workshops, and panels for conferences, schools, and organizations
+                </p>
+              </ScrollReveal>
 
-          <ScrollReveal delay={200}>
-            <DirectAnswer className="max-w-3xl mx-auto mt-8">
-              Rashan Thompson delivers keynotes, workshops, and panel participation on AI
-              readiness, career development, technology leadership, and financial literacy.
-              With 25+ years of Fortune 500 experience and a commitment to community education,
-              he brings both credibility and accessibility to any stage.
-            </DirectAnswer>
-          </ScrollReveal>
+              <ScrollReveal delay={200}>
+                <DirectAnswer className="max-w-3xl mt-8">
+                  Rashan Thompson delivers keynotes, workshops, and panel participation on AI
+                  readiness, career development, technology leadership, and financial literacy.
+                  With 25+ years of Fortune 500 experience and a commitment to community education,
+                  he brings both credibility and accessibility to any stage.
+                </DirectAnswer>
+              </ScrollReveal>
+            </div>
+
+            <ScrollReveal delay={300}>
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10">
+                <Image
+                  src="/images/Rashan Thompson Main.png"
+                  alt="Rashan Thompson delivering keynote presentation to engaged audience"
+                  fill
+                  className="object-cover object-top"
+                />
+              </div>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 

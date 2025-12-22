@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#0a1628"/>
+  <rect x="50" y="50" width="700" height="400" rx="8" fill="#111d32" stroke="#1e3a5f" stroke-width="2"/>
+
+  <!-- Dashboard panels -->
+  <rect x="100" y="100" width="280" height="160" rx="8" fill="#162539" stroke="#1e3a5f"/>
+  <rect x="420" y="100" width="280" height="160" rx="8" fill="#162539" stroke="#1e3a5f"/>
+  <rect x="100" y="290" width="280" height="130" rx="8" fill="#162539" stroke="#1e3a5f"/>
+  <rect x="420" y="290" width="280" height="130" rx="8" fill="#162539" stroke="#1e3a5f"/>
+
+  <!-- Panel 1: Upward arrow metric -->
+  <text x="140" y="140" fill="#6b7280" font-family="system-ui" font-size="12">Revenue Growth</text>
+  <text x="140" y="200" fill="#2563eb" font-family="system-ui" font-size="48" font-weight="bold">+35%</text>
+  <path d="M320 200 L340 160 L360 200 M340 160 L340 230" stroke="#10b981" stroke-width="3" fill="none"/>
+
+  <!-- Panel 2: Gauge/meter -->
+  <text x="460" y="140" fill="#6b7280" font-family="system-ui" font-size="12">Customer Satisfaction</text>
+  <path d="M560 220 A60 60 0 0 1 620 160" stroke="#1e3a5f" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M560 220 A60 60 0 0 1 600 170" stroke="#2563eb" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <text x="560" y="200" fill="white" font-family="system-ui" font-size="24" font-weight="bold">97%</text>
+
+  <!-- Panel 3: Line chart -->
+  <text x="140" y="320" fill="#6b7280" font-family="system-ui" font-size="12">Efficiency Gains</text>
+  <path d="M140 380 L180 370 L220 360 L260 340 L300 320 L340 310" stroke="#d4a853" stroke-width="2" fill="none"/>
+  <circle cx="340" cy="310" r="4" fill="#d4a853"/>
+
+  <!-- Panel 4: Metrics -->
+  <text x="460" y="320" fill="#6b7280" font-family="system-ui" font-size="12">Time to Value</text>
+  <text x="460" y="370" fill="#10b981" font-family="system-ui" font-size="36" font-weight="bold">90 Days</text>
+  <text x="460" y="400" fill="#6b7280" font-family="system-ui" font-size="14">Average ROI Timeline</text>
+
+  <!-- Placeholder text -->
+  <text x="400" y="470" text-anchor="middle" fill="#6b7280" font-family="system-ui" font-size="14">Case Study Results Dashboard</text>
+</svg>

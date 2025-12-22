@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/work-with-students',
     '/work-with-schools',
     '/work-with-faith',
+    '/work-with-nonprofits',
     '/contact',
   ];
 

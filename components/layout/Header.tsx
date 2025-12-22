@@ -87,9 +87,17 @@ export function Header() {
       <div className="container flex justify-between items-center">
         <Link
           href="/"
-          className="font-heading text-xl text-foreground no-underline hover:text-accent-light transition-colors"
+          className="flex items-center no-underline hover:opacity-80 transition-opacity"
         >
-          {siteConfig.name}
+          <video
+            autoPlay
+            muted
+            playsInline
+            className="h-[100px] w-auto"
+            aria-label={siteConfig.name}
+          >
+            <source src="/images/rashan/logo.mp4" type="video/mp4" />
+          </video>
         </Link>
 
         {/* Desktop Navigation */}

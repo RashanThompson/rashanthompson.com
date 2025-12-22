@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   Section,
   DirectAnswer,
@@ -139,7 +140,7 @@ export default function ForBusinessPage() {
   return (
     <>
       {/* Hero */}
-      <section className="hero relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-24">
+      <section className="hero relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-36">
         <MorphingBlob variant="accent" size="lg" position="top-right" opacity={0.15} />
         <MorphingBlob variant="primary" size="md" position="bottom-left" opacity={0.1} />
 
@@ -209,47 +210,62 @@ export default function ForBusinessPage() {
       <Section narrow className="relative">
         <MorphingBlob variant="gold" size="sm" position="top-left" opacity={0.1} />
 
-        <ScrollReveal>
-          <h2 className="text-foreground">
-            Why Do Businesses Choose <span className="gradient-text">Rashan Thompson</span>?
-          </h2>
-        </ScrollReveal>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <ScrollReveal delay={100}>
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10">
+              <Image
+                src="/images/Rashan Thompson Leadership Team.png"
+                alt="Rashan Thompson with leadership team in business setting"
+                fill
+                className="object-cover object-top"
+              />
+            </div>
+          </ScrollReveal>
 
-        <ScrollReveal delay={100}>
-          <DirectAnswer>
-            Businesses choose Rashan Thompson because he combines strategic vision with
-            hands-on implementation expertise. Unlike consultants who deliver recommendations
-            and leave, he stays engaged to ensure strategies translate into measurable
-            business outcomes. His Fortune 500 experience means you get proven methodologies
-            adapted for your scale and context.
-          </DirectAnswer>
-        </ScrollReveal>
+          <div>
+            <ScrollReveal>
+              <h2 className="text-foreground">
+                Why Do Businesses Choose <span className="gradient-text">Rashan Thompson</span>?
+              </h2>
+            </ScrollReveal>
 
-        <ScrollReveal delay={200}>
-          <p className="text-foreground-muted">
-            Most business leaders know they need to leverage AI and modern technology to
-            compete. The challenge is finding a partner who understands both the technology
-            and the business implications -someone who can translate complex possibilities
-            into practical action plans that deliver ROI.
-          </p>
-        </ScrollReveal>
+            <ScrollReveal delay={100}>
+              <DirectAnswer>
+                Businesses choose Rashan Thompson because he combines strategic vision with
+                hands-on implementation expertise. Unlike consultants who deliver recommendations
+                and leave, he stays engaged to ensure strategies translate into measurable
+                business outcomes. His Fortune 500 experience means you get proven methodologies
+                adapted for your scale and context.
+              </DirectAnswer>
+            </ScrollReveal>
 
-        <ScrollReveal delay={300}>
-          <p className="text-foreground-muted">
-            Rashan Thompson has led technology transformations at Cognizant, Conduent, and
-            Slalom Consulting. He has managed teams of 1,500+ globally and held P&L
-            responsibility exceeding $100 million. Now, through{' '}
-            <a
-              href={siteConfig.connectiveTech}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-accent-light hover:text-accent underline"
-            >
-              Connective Technologies
-            </a>
-            , he brings that expertise to businesses ready to accelerate their growth.
-          </p>
-        </ScrollReveal>
+            <ScrollReveal delay={200}>
+              <p className="text-foreground-muted">
+                Most business leaders know they need to leverage AI and modern technology to
+                compete. The challenge is finding a partner who understands both the technology
+                and the business implications -someone who can translate complex possibilities
+                into practical action plans that deliver ROI.
+              </p>
+            </ScrollReveal>
+
+            <ScrollReveal delay={300}>
+              <p className="text-foreground-muted">
+                Rashan Thompson has led technology transformations at Cognizant, Conduent, and
+                Slalom Consulting. He has managed teams of 1,500+ globally and held P&L
+                responsibility exceeding $100 million. Now, through{' '}
+                <a
+                  href={siteConfig.connectiveTech}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent-light hover:text-accent underline"
+                >
+                  Connective Technologies
+                </a>
+                , he brings that expertise to businesses ready to accelerate their growth.
+              </p>
+            </ScrollReveal>
+          </div>
+        </div>
       </Section>
 
       {/* Services */}

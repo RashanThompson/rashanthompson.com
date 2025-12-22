@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#0a1628"/>
+  <rect x="50" y="50" width="700" height="400" rx="8" fill="#111d32" stroke="#1e3a5f" stroke-width="2"/>
+
+  <!-- Stage/podium -->
+  <rect x="300" y="300" width="200" height="150" fill="#1e3a5f"/>
+  <rect x="320" y="280" width="160" height="20" fill="#2563eb"/>
+
+  <!-- Speaker silhouette -->
+  <circle cx="400" cy="180" r="40" fill="#374151"/>
+  <path d="M340 280 Q340 220 400 220 Q460 220 460 280 L460 300 L340 300 Z" fill="#374151"/>
+
+  <!-- Microphone -->
+  <rect x="395" y="200" width="10" height="40" fill="#6b7280"/>
+  <circle cx="400" cy="195" r="8" fill="#9ca3af"/>
+
+  <!-- Audience dots -->
+  <circle cx="150" cy="400" r="15" fill="#374151" opacity="0.6"/>
+  <circle cx="200" cy="420" r="15" fill="#374151" opacity="0.6"/>
+  <circle cx="250" cy="400" r="15" fill="#374151" opacity="0.6"/>
+  <circle cx="550" cy="400" r="15" fill="#374151" opacity="0.6"/>
+  <circle cx="600" cy="420" r="15" fill="#374151" opacity="0.6"/>
+  <circle cx="650" cy="400" r="15" fill="#374151" opacity="0.6"/>
+
+  <!-- Placeholder text -->
+  <text x="400" y="470" text-anchor="middle" fill="#6b7280" font-family="system-ui" font-size="14">Speaking Engagement Photo</text>
+</svg>

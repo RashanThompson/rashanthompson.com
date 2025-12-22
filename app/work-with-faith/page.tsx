@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   Section,
   DirectAnswer,
@@ -80,31 +81,46 @@ export default function WorkWithFaithPage() {
   return (
     <>
       {/* Hero */}
-      <section className="hero relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-24">
+      <section className="hero relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-36">
         <MorphingBlob variant="gold" size="lg" position="top-right" opacity={0.15} />
         <MorphingBlob variant="primary" size="md" position="bottom-left" opacity={0.1} />
 
-        <div className="container text-center relative z-10">
-          <ScrollReveal>
-            <h1 className="text-foreground">
-              <span className="gradient-text-gold">Rashan Thompson</span> Works With Faith Communities
-            </h1>
-          </ScrollReveal>
+        <div className="container relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left">
+              <ScrollReveal>
+                <h1 className="text-foreground">
+                  <span className="gradient-text-gold">Rashan Thompson</span> Works With Faith Communities
+                </h1>
+              </ScrollReveal>
 
-          <ScrollReveal delay={100}>
-            <p className="text-xl text-foreground-muted max-w-2xl mx-auto">
-              Stewardship through technology and financial empowerment
-            </p>
-          </ScrollReveal>
+              <ScrollReveal delay={100}>
+                <p className="text-xl text-foreground-muted max-w-2xl">
+                  Stewardship through technology and financial empowerment
+                </p>
+              </ScrollReveal>
 
-          <ScrollReveal delay={200}>
-            <DirectAnswer className="max-w-3xl mx-auto mt-8">
-              Rashan Thompson partners with faith communities to deliver youth career workshops,
-              family financial wellness programs, entrepreneurship training, and career transition
-              support. As an active member of Renaissance Church in Harlem, he brings personal
-              faith commitment alongside professional expertise.
-            </DirectAnswer>
-          </ScrollReveal>
+              <ScrollReveal delay={200}>
+                <DirectAnswer className="max-w-3xl mt-8">
+                  Rashan Thompson partners with faith communities to deliver youth career workshops,
+                  family financial wellness programs, entrepreneurship training, and career transition
+                  support. As an active member of Renaissance Church in Harlem, he brings personal
+                  faith commitment alongside professional expertise.
+                </DirectAnswer>
+              </ScrollReveal>
+            </div>
+
+            <ScrollReveal delay={300}>
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10">
+                <Image
+                  src="/images/Church.jpg"
+                  alt="Faith community gathering for career and financial wellness workshop"
+                  fill
+                  className="object-cover object-top"
+                />
+              </div>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 

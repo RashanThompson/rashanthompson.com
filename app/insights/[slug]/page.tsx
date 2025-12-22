@@ -168,7 +168,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       />
 
       {/* Hero */}
-      <section className="hero relative min-h-[40vh] flex items-center justify-center overflow-hidden pt-24">
+      <section className="hero relative min-h-[40vh] flex items-center justify-center overflow-hidden pt-36">
         <MorphingBlob variant="accent" size="lg" position="top-right" opacity={0.15} />
         <MorphingBlob variant="primary" size="md" position="bottom-left" opacity={0.1} />
 
