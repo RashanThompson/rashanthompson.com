@@ -46,21 +46,21 @@ const timelineItems = [
   },
   {
     date: '2018-2023',
-    title: 'Senior Director, Slalom Consulting',
+    title: 'Senior Principal, Slalom Consulting',
     description:
       'Architected and delivered large-scale Salesforce implementations for enterprise clients including financial services, healthcare, and technology companies. Led cross-functional teams of 50+ consultants.',
     impact: '$50M+ in client engagements delivered',
   },
   {
     date: '2014-2018',
-    title: 'Vice President, Cognizant Technology Solutions',
+    title: 'Salesforce Operations Director, Cognizant Technology Solutions',
     description:
       'Managed global technology delivery teams across three continents. Drove digital transformation initiatives that generated 35% revenue growth and established new client relationships worth $25M annually.',
     impact: '1,500+ team members managed globally',
   },
   {
     date: '2008-2014',
-    title: 'Senior Director, Conduent (Xerox Services)',
+    title: 'Director of Technical Solutions, Conduent',
     description:
       'Transformed contact center operations serving Fortune 500 clients. Pioneered AI-assisted customer service models that improved NPS by 40% while reducing operational costs by 25%.',
     impact: '40% NPS improvement, 25% cost reduction',
